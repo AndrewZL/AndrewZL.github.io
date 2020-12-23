@@ -39,3 +39,7 @@ img {
     -o-user-drag: none;
     user-drag: none;
 }
+
+.whitelinks {
+    color: #ffffff;
+}
