@@ -30,3 +30,12 @@ Add your styles here
     height:100%;
     padding-left: 130px;
 }
+
+img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}

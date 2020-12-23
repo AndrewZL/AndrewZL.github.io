@@ -509,13 +509,14 @@ header {
 	border-bottom:1px solid rgba(255,255,255,0.21)
 }
 .nav-inner nav li a {
+	font-family: 'avenirnext-medium';
 	color:#000;
 	font-size:13px;
 	text-transform:uppercase;
 	position:relative;
 	text-align:left;
 	letter-spacing:2px;
-	font-weight:700;
+	/*font-weight:700;*/
 }
 .nav-inner nav li a.active {
 	color:#ccc;
@@ -1298,34 +1299,39 @@ footer {
 	top:50%;
 	float:left;
 	width:100%;
-	-webkit-transition: all 700ms linear;
-    -moz-transition: all 700ms linear;
-    -o-transition: all 700ms linear;
-    -ms-transition: all 700ms linear;
-    transition: all 700ms linear;
-     -webkit-transition-delay: 0.5s;
-     -o-transition-delay: 0.5s;
-     -moz-transition-delay: 0.5s;
-     transition-delay: 0.5s;
+	-webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+     -webkit-transition-delay: 0.2s;
+     -o-transition-delay: 0.2s;
+     -moz-transition-delay: 0.2s;
+     transition-delay: 0.2s;
 	opacity:0;
 	z-index:10;
 }
 .wh-info-box a {
-	font-size:18px;
+	font-size:16px;
+	padding-left:5%;
+	padding-right:5%;
+	justify-content: center;
 	font-family:'AvenirNextCyrDemi';
-	text-transform:uppercase;
+	/*text-transform:uppercase;*/
 	position:relative;
 	z-index:20;
 }
 .wh-info-box a:hover {
-	text-decoration:underline;
+	/*text-decoration:underline;*/
 }
 .wh-info-box span {
 	width:100%;
 	margin-top:10px;
+	padding-left:10%;
+	padding-right:10%;
 	float:left;
 	font-size:12px;
-	text-transform:uppercase;
+	/*text-transform:uppercase;*/
 	position:relative;
 }
 .wh-info-box:before {
@@ -1406,6 +1412,7 @@ footer {
 	top:50%;
 }
 .filter-nvis-column .gallery-filters a , .filter-vis-column  .gallery-filters  a {
+	font-family: 'avenirnext-medium';
 	float:left;
 	width:100%;
 	font-size:13px;
@@ -1413,7 +1420,7 @@ footer {
 	position:relative;
 	text-align:left;
 	letter-spacing:2px;
-	font-weight:bold;
+	/*font-weight:bold;*/
 	margin-bottom:10px;
 }
 .filter-nvis-column .gallery-filters a.gallery-filter-active , .filter-vis-column  .gallery-filters a.gallery-filter-active  {
@@ -1475,6 +1482,14 @@ footer {
 	font-size:14px;
 	opacity:0.6;
 	margin-top:6px;
+}
+.separator .grid-item{
+	float:left;
+	width:80px;
+	height:5px;
+	background:#000;
+	margin:20px 0 20px;
+	position:relative;
 }
 .popup-gallery .box-item {
 	overflow:hidden;
@@ -1993,7 +2008,7 @@ figure img {
 	height:100%;
 	line-height:40px;
 	text-align:center !important;
-	font-size:16px;
+	font-size:10px;
 }
 .wt-btn {
 	color:#fff;
@@ -2020,6 +2035,7 @@ figure img {
 }
 .fl-l {
 	float:left;
+	font-size: 12px;
 }
 /* --------- Blog --------------------------------------*/
 .blog-inner {
