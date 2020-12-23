@@ -98,6 +98,9 @@ p {
 	line-height:24px;
 	padding-bottom:10px;
 }
+a {
+	color: #ffffff;
+}
 blockquote {
 	float:left;
 	padding: 10px 20px;
@@ -325,7 +328,7 @@ blockquote p {
 	width:100%;
 }
 .small-container {
-	max-width:550px;
+	max-width:600px;
 }
 .dec-text {
 	font-size:20px;
@@ -384,9 +387,9 @@ header {
 	letter-spacing:2px;
 	/*font-weight:700;*/
 }
-.header-title h2:hover {
-	text-decoration:underline;
-}
+/*.header-title h2:hover {*/
+/*	text-decoration:underline;*/
+/*}*/
 .at {
 	position:relative;
 	top:50%;
