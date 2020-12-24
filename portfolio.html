@@ -3,7 +3,7 @@
     <head>
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
-        <title>Portfolio - Dogma  - Responsive  Architecture  Template</title>
+        <title>Portfolio - Andrew Zou Li</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="robots" content="index, follow"/>
         <meta name="keywords" content=""/>
@@ -15,6 +15,13 @@
         <link type="text/css" rel="stylesheet" href="css/yourstyle.css">
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="images/favicon.ico">
+        <!--=============== modal ==================-->
+        <script src="jquery-modal/modaljquery.js"></script>
+
+        <!-- jQuery Modal -->
+        <script src="jquery-modal/jquery.modal.js"></script>
+        <link rel="stylesheet" href="jquery-modal/jquery.modal.css" />
+
     </head>
     <body>
         <div class="loader">
@@ -43,468 +50,402 @@
                     <h2><a class="ajax" href="#"></a></h2>
                 </div>
                 <!-- Header  title  end-->
-                <!-- share -->
-                <div class="show-share isShare">
-                    <span>Share</span>
-                    <i class="fa fa-chain-broken"></i>            
-                </div>
-                <!-- share  end-->				
             </header>
             <!-- Header   end-->
-            <!--=============== wrapper ===============-->	
+            <!--=============== wrapper ===============-->
             <div id="wrapper">
                 <!--=============== content-holder ===============-->
                 <div class="content-holder elem scale-bg2 transition3">
                     <!-- Page title -->
-                    <div class="dynamic-title">Portfolio</div>
-                    <!-- Page title  end--> 
-                    <!--  Navigation --> 
+                    <div class="dynamic-title">Photography Portfolio</div>
+                    <!-- Page title  end-->
+                    <!--  Navigation -->
                     <div class="nav-overlay"></div>
                     <div class="nav-inner isDown">
                         <nav>
                             <ul>
-                                <li class="subnav">
+                                <!--                                <li class="subnav">-->
+                                <li>
                                     <a href="index.html" class="ajax">Home</a>
-                                    <!--  Subnav  -->
-                                    <ul>
-                                        <li>
-                                            <a href="index.html" class="ajax">Slideshow </a>
-                                        </li>
-                                        <li>
-                                            <a href="index2.html" class="ajax">Multi Slideshow 4</a>
-                                        </li>
-                                        <li>
-                                            <a href="index3.html" class="ajax">Multi Slideshow 3</a>
-                                        </li>
-                                        <li>
-                                            <a href="index4.html" class="ajax">Video </a>
-                                        </li>
-                                        <li>
-                                            <a href="index5.html" class="ajax">Single image</a>
-                                        </li>
-                                        <li>
-                                            <a href="index6.html" class="ajax">Slider </a>
-                                        </li>
-                                        <li>
-                                            <a href="index7.html" class="ajax">Visible Menu</a>
-                                        </li>
-                                    </ul>
-                                    <!--  Subnav  end-->
                                 </li>
                                 <li><a href="about.html" class="ajax"> About </a></li>
-                                <li class="subnav">
-                                    <a href="portfolio.html" class="ajax active">Work</a>
-                                    <!--  Subnav  -->
-                                    <ul>
-                                        <li>
-                                            <a href="portfolio.html" class="ajax">Style 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="photog.html" class="ajax">Style 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="engold.html" class="ajax" >Style 3</a>
-                                        </li>
-                                        <li>
-                                            <a href="eng.html" class="ajax" >Style 4</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio5.html" class="ajax" >Style 5</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio6.html" class="ajax" >Style 6</a>
-                                        </li>
-                                    </ul>
-                                    <!--  Subnav  end-->									
-                                </li>
-                                <li><a href="services.html" class="ajax">Services</a></li>
-                                <li><a href="contact.html" class="ajax">Contact</a></li>
-                                <li class="subnav">
-                                    <a href="blog.html" class="ajax">Journal</a>
-                                    <!--  Subnav  -->
-                                    <ul>
-                                        <li>
-                                            <a href="blog.html" class="ajax">4 column</a>
-                                        </li>
-                                        <li>
-                                            <a href="blog2.html" class="ajax">3 column</a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-single.html" class="ajax">Single </a>
-                                        </li>
-                                    </ul>
-                                    <!--  Subnav  end-->									
-                                </li>
-                                <li class="subnav">
-                                    <a href="#">Portfolio single</a>
-                                    <!--  Subnav  -->
-                                    <ul>
-                                        <li>
-                                            <a href="portfolio-single.html" class="ajax">Style 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio-single2.html" class="ajax">Style 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio-single3.html" class="ajax" >Style 3</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio-single4.html" class="ajax" >Style 4</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio-single5.html" class="ajax" >Style 5</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio-single6.html" class="ajax" >Style 6</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio-single7.html" class="ajax" >Style 7</a>
-                                        </li>
-                                        <li>
-                                            <a href="404.html" class="ajax" >404</a>
-                                        </li>
-                                    </ul>
-                                    <!--  Subnav  end-->
+                                <li><a href="projects.html" class="ajax"> Engineering </a></li>
+                                <li>
+                                    <a href="portfolio.html" class="ajax active">Photography</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <!--  Navigation end --> 
+                    <!--  Navigation end -->
                     <!--  Content  --> 
                     <div class="content ">
                         <section class="no-padding no-border">
-                            <!-- Filters-->
-                            <div class="filter-holder filter-nvis-column">
-                                <div class="gallery-filters at">
-                                    <a href="#" class="gallery-filter gallery-filter-active"  data-filter="*">All</a>		
-                                    <a href="#" class="gallery-filter " data-filter=".houses">Houses</a>
-                                    <a href="#" class="gallery-filter" data-filter=".interior">Interior</a>
-                                    <a href="#" class="gallery-filter" data-filter=".apartments">Apartments</a>
+                            <!-- fixed-info-container -->
+                            <div class="fixed-info-container">
+                                <!-- Filters-->
+                                <div class="filter-holder filter-vis-column">
+                                    <div class="gallery-filters">
+                                        <a href="#" class="gallery-filter gallery-filter-active"  data-filter="*">All</a>		
+                                        <a href="#" class="gallery-filter " data-filter=".landscapes">Landscapes</a>
+                                        <a href="#" class="gallery-filter" data-filter=".wildlife">Wildlife</a>
+                                        <a href="#" class="gallery-filter" data-filter=".architecture">Architecture</a>
+                                    </div>
                                 </div>
+                                <!-- Filters end -->
                             </div>
+                            <!-- fixed-info-container end-->
                             <!-- filters end -->
-                            <!--  filter-button-->
-                            <div class="filter-button vis-fc">Filter</div>
-                            <!--  filter-button end -->
-                            <!--  gallery-items -->
-                            <div class="gallery-items   hid-port-info">
-                                <!-- 1 -->
-                                <div class="gallery-item houses apartments">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                            <!-- resize-carousel-holder-->
+                            <div class="resize-carousel-holder vis-info">
+                                <!-- gallery-items -->
+                                <div class="gallery-items   hid-port-info">
+                                    <!-- 1 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Flower on a Brushtip
+                                                        </a>
+                                                        <span class="folio-cat">Huangshan, China</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/brushtip.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 1 end -->
-                                <!-- 2 -->
-                                <div class="gallery-item houses interior">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 1 end -->
+                                    <!-- 2 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Enroute to Grinnel Glacier
+                                                        </a>
+                                                        <span class="folio-cat">Glacier National Park, Montana, USA</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/grinnelglacier.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 2 end -->
-                                <!-- 3 -->
-                                <div class="gallery-item  apartments interior">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 2 end -->
+                                    <!-- 3 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Cameron Falls
+                                                        </a>
+                                                        <span class="folio-cat">Waterton Lakes National Park, Alberta, Canada</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/cameronfalls.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 3 end -->
-                                <!-- 4 -->
-                                <div class="gallery-item gallery-item-second interior">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 3 end -->
+                                    <!-- 4 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Medicine Lake
+                                                        </a>
+                                                        <span class="folio-cat">Jasper National Park, Alberta, Canada</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/jasper.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 4 end -->                                    
-                                <!-- 5 -->
-                                <div class="gallery-item houses">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 4 end -->                                    
+                                    <!-- 5 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Driftwood
+                                                        </a>
+                                                        <span class="folio-cat">Waterton Lakes National Park, Alberta, Canada</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/watertondriftwood.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 5 end -->
-                                <!-- 6 -->
-                                <div class="gallery-item houses">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 5 end -->
+                                    <!-- 6 -->
+                                    <div class="gallery-item landscapes architecture">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Fogo Island Inn
+                                                        </a>
+                                                        <span class="folio-cat">Newfoundland, Canada</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/fogoisland.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 6 end -->
-                                <!-- 7 -->
-                                <div class="gallery-item interior">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 6 end -->
+                                    <!-- 7 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Pissing Mare Falls
+                                                        </a>
+                                                        <span class="folio-cat">Gros Morne National Park, Newfoundland, Canada</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/pissingmare.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 7 end -->
-                                <!-- 8 -->
-                                <div class="gallery-item apartments interior">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 7 end -->
+                                    <!-- 8 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        House in the Mist
+                                                        </a>
+                                                        <span class="folio-cat">Skerwink Trail, Newfoundland, Canada</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/skerwink.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 8 end -->
-                                <!-- 9 -->
-                                <div class="gallery-item houses">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 8 end -->
+                                    <!-- 9 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Twin Peaks
+                                                        </a>
+                                                        <span class="folio-cat">Gros Morne National Park, Newfoundland, Canada</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/grosmorne1.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 9 end -->
-                                <!-- 10 -->
-                                <div class="gallery-item houses">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 9 end -->
+                                    <!-- 10 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Maligne Lake
+                                                        </a>
+                                                        <span class="folio-cat">Jasper National Park, Alberta, Canada</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/malignelake.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 10 end -->
-                                <!-- 11 -->
-                                <div class="gallery-item apartments interior">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 10 end -->
+                                    <!-- 11 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Pyramid Lake Reflections
+                                                        </a>
+                                                        <span class="folio-cat">Jasper National Park, Alberta, Canada</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/pyramidlake.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 11 end -->
-                                <!-- 12 -->
-                                <div class="gallery-item houses">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 11 end -->
+                                    <!-- 12 -->
+                                    <div class="gallery-item wildlife">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Mountain Goat on Highline Trail
+                                                        </a>
+                                                        <span class="folio-cat">Glacier National Park, Montana, USA</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/goat.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 12 end -->
-                                <!-- 13 -->
-                                <div class="gallery-item   interior">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 12 end -->
+                                    <!-- 13 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Above the Clouds I
+                                                        </a>
+                                                        <span class="folio-cat">Banff National Park, Alberta, Canada </span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/banff1.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 13 end -->
-                                <!-- 14 -->
-                                <div class="gallery-item apartments">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 13 end -->
+                                    <!-- 14 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a href="portfolio-single.html" class="ajax">
+                                                        Above the Clouds II
+                                                        </a>
+                                                        <span class="folio-cat">Banff National Park, Alberta, Canada</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/banff2.jpg"   alt="" >
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 14 end -->
-                                <!-- 15 -->
-                                <div class="gallery-item gallery-item-second apartments">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 14 end -->
+                                    <!-- 15 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Wild Goose Island
+                                                        </a>
+                                                        <span class="folio-cat">Glacier National Park, Montana, USA</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/stmary.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 15 end -->                                    
-                                <!-- 16 -->
-                                <div class="gallery-item  houses apartments">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 15 end -->                                    
+                                    <!-- 16 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Going to the Sun Road
+                                                        </a>
+                                                        <span class="folio-cat">Glacier National Park, Montana, USA</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/glacierroad.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 16 end -->
-                                <!-- 17 -->
-                                <div class="gallery-item  houses  interior">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 16 end -->
+                                    <!-- 17 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Scottish Highlands
+                                                        </a>
+                                                        <span class="folio-cat">Scotland, UK</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/highlands.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 17 end -->
-                                <!-- 18 -->
-                                <div class="gallery-item  apartments">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="portfolio-single.html" class="ajax">
-                                                    Modern house                                                
-                                                    </a>
-                                                    <span class="folio-cat">Houses design</span>
+                                    <!-- 17 end -->
+                                    <!-- 18 -->
+                                    <div class="gallery-item architecture">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                        Atlanta Marriott Marquis
+                                                        </a>
+                                                        <span class="folio-cat">Atlanta, Georgia, USA (Honourable Mention, RMSP 2020 Photo Contest)</span>
+                                                    </div>
                                                 </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/atlanta.jpg"   alt="">
                                             </div>
-                                            <img  src="images/folio/thumbs/1.jpg"   alt="">
                                         </div>
                                     </div>
+                                    <!-- 18 end -->
+                                    <!-- 19 -->
+                                    <div class="gallery-item architecture">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                            Taiyuan Museum of Art
+                                                        </a>
+                                                        <span class="folio-cat">Taiyuan, Shanxi, China</span>
+                                                    </div>
+                                                </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/taiyuan.jpg"   alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 19 end -->
+                                    <!-- 20 -->
+                                    <div class="gallery-item landscapes">
+                                        <div class="grid-item-holder">
+                                            <div class="box-item">
+                                                <div class="wh-info-box">
+                                                    <div class="wh-info-box-inner at">
+                                                        <a>
+                                                            Green Gardens
+                                                        </a>
+                                                        <span class="folio-cat">Gros Morne National Park, Newfoundland, Canada</span>
+                                                    </div>
+                                                </div>
+                                                <img draggable="false" ondragstart="return false;" src="images/folio/thumbs/gardens.jpg"   alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 20 end -->
                                 </div>
-                                <!-- 18 end -->
+                                <!-- end gallery items -->
                             </div>
-                            <!-- end gallery items -->					
                         </section>
                     </div>
-                    <!--  Content  end --> 
-                    <!-- share  -->
-                    <div class="share-inner">
-                        <div class="share-container  isShare"  data-share="['facebook','googleplus','twitter','linkedin']"></div>
-                        <div class="close-share"></div>
-                    </div>
-                    <!-- share end -->
+                    <!--  Content  end -->
+
                 </div>
                 <!-- Content holder  end -->
             </div>
@@ -512,17 +453,17 @@
             <!--=============== footer ===============-->
             <footer>
                 <div class="policy-box">
-                    <span>&#169; Dogma 2015  /  All rights reserved. </span>
+                    <span>&#169; Andrew Zou Li 2020  /  All rights reserved. </span>
                 </div>
-                <div class="footer-social">
-                    <ul>
-                        <li><a href="#" target="_blank" ><i class="fa fa-facebook"></i><span>facebook</span></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i><span>twitter</span></a></li>
-                        <li><a href="#" target="_blank" ><i class="fa fa-instagram"></i><span>instagram</span></a></li>
-                        <li><a href="#" target="_blank" ><i class="fa fa-pinterest"></i><span>pinterest</span></a></li>
-                        <li><a href="#" target="_blank" ><i class="fa fa-tumblr"></i><span>tumblr</span></a></li>
-                    </ul>
-                </div>
+<!--                <div class="footer-social">-->
+<!--                    <ul>-->
+<!--                        <li><a href="#" target="_blank" ><i class="fa fa-facebook"></i><span>facebook</span></a></li>-->
+<!--                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i><span>twitter</span></a></li>-->
+<!--                        <li><a href="#" target="_blank" ><i class="fa fa-instagram"></i><span>instagram</span></a></li>-->
+<!--                        <li><a href="#" target="_blank" ><i class="fa fa-pinterest"></i><span>pinterest</span></a></li>-->
+<!--                        <li><a href="#" target="_blank" ><i class="fa fa-tumblr"></i><span>tumblr</span></a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
             </footer>
             <!-- footer end -->
         </div>
