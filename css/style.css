@@ -341,7 +341,8 @@ blockquote p {
 .dec-text2 {
 	font-size: 16px;
 	color: #000;
-	padding-top:10px;
+	padding-top:15px;
+	padding-bottom:5px;
 	position: relative;
 	float: left;
 	text-align: left;
@@ -1988,6 +1989,7 @@ figure img {
 	background:#000;
 	position:relative;
 	letter-spacing:1px;
+	width: 200px;
 }
 .anim-button {
 	overflow:hidden;
@@ -1998,7 +2000,7 @@ figure img {
     max-width: 100%;
     overflow: hidden;
     outline: none;
- 	width: auto;
+ 	width: 200px;
 }
 .anim-button i {
  	top:-100%;
