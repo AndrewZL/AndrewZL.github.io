@@ -43,3 +43,21 @@ img {
 .whitelinks {
     color: #ffffff;
 }
+
+.downscaled{
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.containerx {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+.centeredx{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
