@@ -1,468 +1,144 @@
 <!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <!--=============== basic  ===============-->
-        <meta charset="UTF-8">
-        <title>Projects - Andrew Zou Li</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="robots" content="index, follow"/>
-        <meta name="keywords" content=""/>
-        <meta name="description" content=""/>
-        <!--=============== css  ===============-->	
-        <link type="text/css" rel="stylesheet" href="css/reset.css">
-        <link type="text/css" rel="stylesheet" href="css/plugins.css">
-        <link type="text/css" rel="stylesheet" href="css/style.css">
-        <link type="text/css" rel="stylesheet" href="css/yourstyle.css">
-        <!--=============== favicons ===============-->
-        <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-
-        <!-- jQuery Modal -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-        <link rel="stylesheet" href="jquery-modal/jquery.modal.css" />
-
-    </head>
-    <body>
-        <div class="loader">
-            <div class="tm-loader">
-                <div id="circle"></div>
-            </div>
-        </div>
-        <!--================= main start ================-->
-        <div id="main">
-            <!--=============== header ===============-->
-            <header>
-                <!-- Nav button-->
-                <div class="nav-button">
-                    <span  class="nos"></span>
-                    <span class="ncs"></span>
-                    <span class="nbs"></span>
-                </div>
-                <!-- Nav button end -->
-                <!-- Logo--> 
-                <div class="logo-holder">
-                    <a href="index.html" class="ajax"><img src="images/logo.png" alt=""></a>
-                </div>
-                <!-- Logo  end--> 
-                <!-- Header  title --> 
-                <div class="header-title">
-                    <h2><a class="ajax" href="#"></a></h2>
-                </div>
-                <!-- Header  title  end-->
-<!--                &lt;!&ndash; share &ndash;&gt;-->
-<!--                <div class="show-share isShare">-->
-<!--                    <span>Share</span>-->
-<!--                    <i class="fa fa-chain-broken"></i>            -->
-<!--                </div>-->
-<!--                &lt;!&ndash; share  end&ndash;&gt;				-->
-            </header>
-            <!-- Header   end-->
-            <!--=============== wrapper ===============-->	
-            <div id="wrapper">
-
-                <!--=============== content-holder ===============-->
-                <div class="content-holder elem scale-bg2 transition3">
-                    <!-- Page title -->
-                    <div class="dynamic-title">Projects</div>
-                    <!-- Page title  end--> 
-                    <!--  Navigation -->
-                    <!--  Navigation -->
-                    <div class="nav-overlay"></div>
-                    <div class="nav-inner isDown">
-                        <nav>
-                            <ul>
-                                <!--                                <li class="subnav">-->
-<!--                                <li>-->
-<!--                                    <a href="oldindex.html" class="ajax">Home</a>-->
-<!--                                </li>-->
-                                <li><a href="index.html" class="ajax"> About </a></li>
-                                <li><a href="projects.html" class="ajax active"> Engineering </a></li>
-                                <li>
-                                    <a href="portfolio.html" class="ajax">Photography</a>
-                                </li>
-                            </ul>
-                        </nav>
+<html class=no-focus-outline lang=en-us data-color-mode="light">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link type=text/css rel=stylesheet
+          href=css/style.css
+          media=screen>
+    <link type=text/css rel=stylesheet
+          href=css/plugins.css
+          media=screen>
+    <noscript>
+        <link type=text/css rel=stylesheet
+              href=css/style.css
+              media=screen>
+    </noscript>
+    <title>About | Andrew Zou Li</title>
+</head>
+<body>
+<div class=hidden>
+    <svg>
+        <defs/>
+        <symbol id="arrow-down" viewBox="0 0 16 16"><title>down arrow</title>
+            <path d="M8 16 0 7.969l.77-.774 6.682 6.697V0h1.096v13.892l6.682-6.696.77.773z" fill-rule="nonzero"/>
+        </symbol>
+        <symbol id="arrow-external" viewBox="0 0 12 12"><title>external link</title>
+            <path d="M11.657.343l-.022 11.336-1.092.002.01-9.46L.73 12.044l-.774-.774 9.823-9.823-9.46.01L.32.364z"
+                  fill-rule="nonzero"/>
+        </symbol>
+        <symbol id="arrow-left" viewBox="0 0 16 16"><title>left arrow</title>
+            <path d="M0 8l8.031-8 .774.77-6.697 6.682H16v1.096H2.108l6.696 6.682-.773.77z" fill-rule="nonzero"/>
+        </symbol>
+        <symbol id="arrow-right" viewBox="0 0 16 16"><title>right arrow</title>
+            <path d="M16 8l-8.031 8-.774-.77 6.697-6.682H0V7.452h13.892L7.196.77 7.969.0z" fill-rule="nonzero"/>
+        </symbol>
+        <symbol id="arrow-up" viewBox="0 0 16 16"><title>up arrow</title>
+            <path d="M8 0l8 8.031-.77.774-6.682-6.697V16H7.452V2.108L.77 8.804.0 8.031z" fill-rule="nonzero"/>
+        </symbol>
+        <!--        <symbol id="close" viewBox="0 0 12 12"><title>close</title>-->
+        <!--            <path d="M10.596.695l.71.71L6.71 6l4.596 4.595-.71.71L6 6.71l-4.594 4.595-.71-.71L5.29 6 .695 1.405l.71-.71L6 5.29 10.596.695z"-->
+        <!--                  fill-rule="nonzero"/>-->
+        <!--        </symbol>-->
+        <!--        <symbol id="menu" viewBox="0 0 12 11"><title>menu</title>-->
+        <!--            <path d="M12.001 9v1.004H-.001V9h12.002zm0-4.502v1.004H-.001V4.498h12.002zm0-4.498v1.004H-.001V0h12.002z"-->
+        <!--                  fill-rule="nonzero"/>-->
+        <!--        </symbol>-->
+        <symbol id="mode-dark" viewBox="0 0 12 12"><title>dark mode</title>
+            <path d="M3.28.65l.11-.054.339-.151.395-.146.226-.07.31-.079.217-.045.236-.04.173-.023.306-.028a6 6 0 016.404 5.761L12 6A6 6 0 110 6l.007-.287.02-.294c.017-.167.04-.331.069-.494l.033-.166.06-.259.028-.103.045-.157.084-.252a5.96 5.96.0 01.124-.32l.066-.15.114-.238c.182-.356.398-.692.644-1.002l.239-.284.119-.128.178-.18.127-.12.258-.221.25-.193.19-.134.179-.116L3.1.746 3.28.65zM6 11a5 5 0 005-5H1a5 5 0 005 5z"
+                  fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="mode-light" viewBox="0 0 12 12"><title>light mode</title>
+            <path d="M8.72 11.35l-.11.054-.339.151-.395.146-.226.07-.31.079-.217.045-.236.04-.173.023-.306.028A6 6 0 01.004 6.225L0 6a6 6 0 1112 0l-.007.287-.02.294a5.998 5.998.0 01-.069.494l-.033.166-.06.259-.028.103-.045.157-.084.252a5.96 5.96.0 01-.124.32l-.066.15-.114.238a6.006 6.006.0 01-.644 1.002l-.239.284-.119.128-.178.18-.127.12-.258.221-.25.193-.19.134-.179.116-.267.156-.18.096zM6 1A5 5 0 001 6h10A5 5 0 006 1z"
+                  fill-rule="evenodd"/>
+        </symbol>
+    </svg>
+</div>
+<header class=header role=banner>
+    <a href=index.html class=header__title data-page-link>
+        andrew zou li</a>
+    <nav class=header__nav role=navigation data-nav>
+        <button class="header__menu-toggle button button--toggle" data-menu-toggle aria-expanded=false
+                aria-controls=#menu>
+                    <span class="button__icon button__icon--default"><svg aria-hidden="true" focusable="false"
+                                                                          class="icon icon--left" viewBox="0 0 100 100"
+                                                                          width="16"><use
+                            xlink:href="#menu"/></svg></span><span class="button__icon button__icon--active"><svg
+                aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100" width="16"><use
+                xlink:href="#close"/></svg></span>Menu
+        </button>
+        <ul id=menu>
+            <li><a class=is-active href=index.html title=About aria-current=page>About</a></li>
+            <li><a href=projects.html title=projects>Engineering</a></li>
+            <li><a href=portfolio.html title=portfolio>Photography</a></li>
+            <li>
+                <button class="header__theme-toggle button button--toggle" data-theme-toggle aria-pressed=false>
+                            <span class="button__icon button__icon--default">
+                        <svg aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100"
+                             width="12"><use xlink:href="#mode-dark"/></svg>Dark Mode</span>
+                    <span class="button__icon button__icon--active">
+                            <svg aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100"
+                                 width="12"><use xlink:href="#mode-light"/></svg>Light Mode</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div id=content class=container>
+    <main id=main class=main role=main data-main-wrapper>
+        <div data-main-content>
+            <section>
+                <div class=grid-custom>
+                    <div class="card">
+                        <a href="https://www.boreas.utias.utoronto.ca/#/">
+                            <div class="card__media">
+                                <img width=890 height=500
+                                     src="images/portfolios/engineering/BD.png" alt=""/>
+                            </div>
+                        </a>
                     </div>
-<!--                      Navigation end -->
-                    <!--  Content  -->
-                    <div class="content ">
-                        <section class="no-padding no-border">
-<!--                            &lt;!&ndash; Filters&ndash;&gt;-->
-<!--                            <div class="filter-holder filter-nvis-column">-->
-<!--                                <div class="gallery-filters at">-->
-<!--                                    <a href="#" class="gallery-filter gallery-filter-active"  data-filter="*">All</a>-->
-<!--                                    <a href="#" class="gallery-filter " data-filter=".houses">Houses</a>-->
-<!--                                    <a href="#" class="gallery-filter" data-filter=".interior">Interior</a>-->
-<!--                                    <a href="#" class="gallery-filter" data-filter=".apartments">Apartments</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--&lt;!&ndash;                             filters end&ndash;&gt;-->
-<!--&lt;!&ndash;                             filter-button&ndash;&gt;-->
-<!--                            <div class="filter-button vis-fc">Filter</div>-->
-<!--                            &lt;!&ndash; filter-button end  &ndash;&gt;-->
-                            <!-- gallery-items   -->
-                            <div class="gallery-items   hid-port-info grid-small-pad">
-<!--                                &lt;!&ndash; 1 &ndash;&gt;-->
-<!--                                <div class="gallery-item houses apartments">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <h3>Project Title</h3>-->
-<!--                                                    <div class="separator2"></div>-->
-<!--                                                    <div class="clearfix"></div>-->
-<!--                                                    <p>Curabitur bibendum mi sed rhoncus aliquet. Nulla blandit porttitor justo, at posuere sem accumsan nec. Sed non arcu non sem commodo ultricies. Sed non nisi viverra, porttitor sem nec, vestibulum justo tortor ornare turpis faucibus.</p>-->
-<!--                                                    <h4>Info</h4>-->
-<!--                                                    <ul class="project-details">-->
-<!--                                                        <li><span>Date :</span> 26.05.2014 </li>-->
-<!--                                                        <li><span>Client :</span>  House Big </li>-->
-<!--                                                        <li><span>Status :</span> Completed </li>-->
-<!--                                                        <li><span>Location : </span>  <a href="https://goo.gl/maps/UzN5m" target="_blank"> Kharkiv Ukraine  </a></li>-->
-<!--                                                    </ul>-->
-<!--                                                    <span class="folio-cat">idk.</span>-->
-
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--&lt;!&ndash;                                            <span class="folio-cat">Houses design</span>&ndash;&gt;-->
-<!--                                            <img  src="images/folio/opencommute.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 1 end &ndash;&gt;-->
-<!--                                 2-->
-                                <div class="gallery-item personal">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a href="https://share.streamlit.io/andrewzl/opencommutev2/visualization.py" class="ajax">
-                                                        View Demo
-                                                        <br>
-                                                        <br>
-                                                        <img src="images/folio/eng_thumbs/test.PNG" alt="Snow" style="width:60%;">
-                                                    </a>
-                                                    <!--                                                    <img src="images/folio/thumbs/jasper.jpg" alt="">-->
-<!--                                                    <a href="https://share.streamlit.io/andrewzl/opencommutev2/visualization.py" class="ajax">-->
-<!--                                                    Open Commute-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Analyzing Toronto's cycling volumes and accidents to create an accessible measure of cyclist safety</span>-->
-                                                </div>
-                                            </div>
-                                            <img  src="images/folio/eng_thumbs/OC.png"   alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 2 end -->
-                                <!-- 3 -->
-                                <div class="gallery-item hackathon">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <a href="https://github.com/AndrewZL/ignitionhacks" class="ajax">
-                                                    View Repository
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <img  src="images/folio/eng_thumbs/SA.png"   alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 3 end -->
-                                <!-- 4 -->
-                                <div class="gallery-item internship">
-                                    <div class="grid-item-holder">
-                                        <div class="box-item">
-                                            <div class="wh-info-box">
-                                                <div class="wh-info-box-inner at">
-                                                    <a>
-                                                        <br>
-                                                        <br>
-                                                        <br>
-                                                        Sunnybrook Research Institute
-                                                    </a>
-                                                    <span class="folio-cat">Dr. Kullervo Hynynen, William Li</span>
-                                                </div>
-                                            </div>
-                                            <img  src="images/folio/eng_thumbs/PM.png"   alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 4 end -->
-<!--                                &lt;!&ndash; 5 &ndash;&gt;-->
-<!--                                <div class="gallery-item personal">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img src="images/folio/eng_thumbs/openCommute.png" alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 5 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 6 &ndash;&gt;-->
-<!--                                <div class="gallery-item houses">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/jasper.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 6 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 7 &ndash;&gt;-->
-<!--                                <div class="gallery-item interior">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 7 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 8 &ndash;&gt;-->
-<!--                                <div class="gallery-item apartments interior">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 8 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 9 &ndash;&gt;-->
-<!--                                <div class="gallery-item houses">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 9 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 10 &ndash;&gt;-->
-<!--                                <div class="gallery-item houses">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 10 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 11 &ndash;&gt;-->
-<!--                                <div class="gallery-item apartments interior">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 11 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 12 &ndash;&gt;-->
-<!--                                <div class="gallery-item houses">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 12 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 13 &ndash;&gt;-->
-<!--                                <div class="gallery-item   interior">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 13 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 14 &ndash;&gt;-->
-<!--                                <div class="gallery-item apartments">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 14 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 15 &ndash;&gt;-->
-<!--                                <div class="gallery-item gallery-item-second apartments">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 15 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 16 &ndash;&gt;-->
-<!--                                <div class="gallery-item  houses apartments">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 16 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 17 &ndash;&gt;-->
-<!--                                <div class="gallery-item  houses  interior">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 17 end &ndash;&gt;-->
-<!--                                &lt;!&ndash; 18 &ndash;&gt;-->
-<!--                                <div class="gallery-item  apartments">-->
-<!--                                    <div class="grid-item-holder">-->
-<!--                                        <div class="box-item">-->
-<!--                                            <div class="wh-info-box">-->
-<!--                                                <div class="wh-info-box-inner at">-->
-<!--                                                    <a href="portfolio-single.html" class="ajax">-->
-<!--                                                    Modern house-->
-<!--                                                    </a>-->
-<!--                                                    <span class="folio-cat">Houses design</span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <img  src="images/folio/thumbs/1.jpg"   alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash; 18 end &ndash;&gt;-->
-<!--                            </div>-->
-<!--                            &lt;!&ndash; end gallery items &ndash;&gt;					-->
-<!--                        </section>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash;  Content  end &ndash;&gt;-->
+                    <div class="card">
+                        <a href="https://www.github.com/andrewzl/opencommute">
+                            <div class="card__media">
+                                <img width=890 height=500
+                                     src="images/portfolios/engineering/OC.png" alt=""/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/AndrewZL/SentimentAnalysis-IgnitionHacks">
+                            <div class="card__media">
+                                <img width=890 height=500
+                                     src="images/portfolios/engineering/SA.png" alt=""/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <div class="card__media">
+                            <img width=890 height=500 class=lazyload
+                                 src="images/portfolios/engineering/PM.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <!-- Content holder  end -->
-            </div>
-
-            <!-- wrapper end -->
-            <!--=============== footer ===============-->
-            <footer>
-                <div class="policy-box">
-                    <span>&#169; Andrew Zou Li 2021  /  All rights reserved. </span>
-                </div>
-                <div class="footer-social">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/andrewzouli/" target="_blank"><i class="fa fa-linkedin"></i><span>linkedin</span></a></li>
-                        <li><a href="https://github.com/AndrewZL" target="_blank"><i class="fa fa-github"></i><span>github</span></a></li>
-                    </ul>
-                </div>
-            </footer>
-            <!-- footer end -->
+            </section>
         </div>
-        <!-- Main end -->
-        <!--=============== google map ===============-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" type="text/javascript"></script> 
-        <!--=============== scripts  ===============-->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/core.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
-    </body>
+    </main>
+</div>
+<footer class=footer role=contentinfo>
+    <div class="policy-box">
+        <span>&#169; Andrew Zou Li 2021  /  All rights reserved. </span>
+    </div>
+    <div class="footer-social">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/andrewzouli/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li><a href="https://github.com/AndrewZL" target="_blank">
+                <i class="fab fa-github"></i>
+            </a></li>
+        </ul>
+    </div>
+</footer>
+<script src="js/extra.js" media="screen"></script>
+</body>
 </html>

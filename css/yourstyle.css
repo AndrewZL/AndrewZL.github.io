@@ -1,63 +1,42 @@
-/*******************************************************************************
-Add your styles here
- *******************************************************************************/
-.role {
-    margin: 0;
-    padding: 0;
-    font-family: 'AvenirNextCyr-Demi';
-    font-size: 14px;
-    color: #000;
-    height:100%;
+.content2 {
+    width:100%;
+    position:relative;
+    z-index:2;
+    float:left;
+    padding-bottom:50px;
 }
 
-.resumesection {
-    margin: 0;
-    padding: 0;
-    font-family: 'AvenirNextCyr-Demi';
-    font-size: 16px;
-    color: #000;
-    height:100%;
-}
-.roledesc {
-    text-align:left;
-    list-style-type: square;
-    list-style-position: outside;
-    margin: 0;
-    padding: 0;
-    font-family: 'AvenirNextCyr';
-    font-size: 12px;
-    color: #6e6e6e;
-    height:100%;
-    padding-left: 130px;
-}
-
-img {
-    pointer-events: none;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-}
-
-.whitelinks {
-    color: #ffffff;
-}
-
-.downscaled{
-    image-rendering: -webkit-optimize-contrast;
-}
-
-.containerx {
+.container2{
+    /*max-width: 1224px;*/
+    width:100%;
+    margin:0 ;
     position: relative;
-    text-align: center;
-    color: white;
+    z-index:2;
 }
 
-/* Centered text */
-.centeredx{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.container3 {
+    display:grid;
+    /*grid-template-columns:var(--base-grid-columns);*/
+    /*grid-column-gap:var(--base-grid-gap);*/
+    /*max-width:var(--base-max-width);*/
+    padding:0
 }
+
+/*.fixed-info-container2 {*/
+/*    position:fixed;*/
+/*    z-index:2;*/
+/*    top:60px;*/
+/*    left:0;*/
+/*    bottom:50px;*/
+/*    width:350px;*/
+/*    background:#fff;*/
+/*    padding:120px 30px 80px 30px;*/
+/*    overflow:hidden;*/
+/*}*/
+/*.filter-vis-column2 {*/
+/*    position:relative;*/
+/*    height:auto;*/
+/*    float:left;*/
+/*    width:100%;*/
+/*    padding:0;*/
+/*}*/
