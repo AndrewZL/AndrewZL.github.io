@@ -55,8 +55,8 @@
             history.replaceState(document.title, document.title, location.href),
             document.addEventListener("click", S, !1), window.addEventListener("resize", function () {
         }, !1)
-        // v && v.forEach(a => {
-        //     ia(a)
-        // }), $(), navigator && navigator.serviceWorker && navigator.serviceWorker.register("/service-worker.js")
+        v && v.forEach(a => {
+            ia(a)
+        }), $(), navigator && navigator.serviceWorker && navigator.serviceWorker.register("/service-worker.js")
     })();
 })();
