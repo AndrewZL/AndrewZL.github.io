@@ -14,7 +14,7 @@
               href=css/style.css
               media=screen>
     </noscript>
-    <title>About | Andrew Zou Li</title>
+    <title>Resources | Andrew Zou Li</title>
 </head>
 <body>
 <div class=hidden>
@@ -68,10 +68,10 @@
                 xlink:href="#close"/></svg></span>Menu
         </button>
         <ul id=menu>
-            <li><a class=is-active href=index.html title=About aria-current=page>About</a></li>
+            <li><a href=index.html title=About>About</a></li>
             <li><a href=projects.html title=projects>Engineering</a></li>
             <li><a href=portfolio.html title=portfolio>Photography</a></li>
-            <li><a href=notes.html title=notes>Resources</a></li>
+            <li><a class=is-active href=notes.html title=notes aria-current=page>Resources</a></li>
             <li>
                 <button class="header__theme-toggle button button--toggle" data-theme-toggle aria-pressed=false>
                             <span class="button__icon button__icon--default">
@@ -88,83 +88,25 @@
 <div id=content class=container>
     <main id=main class=main role=main data-main-wrapper>
         <div data-main-content>
-            <header class=intro>
-                <div class=intro__body>
-                    <div class=intro__back></div>
-                    <div class=intro__desc><h2 class=text-meta>Hi, I'm Andrew</h2>
-                        <p>
-                            Student at the University of Toronto studying Engineering Science. <br>
-                            Working towards designing safer and smarter autonomous robots.
-                        </p>
-                        <a href="projects.html" class="ajax btn anim-button trans-btn transition fl-l">
-                            <span>ENGINEERING</span><i class="fa fa-eye"></i></a>
-                        <a href="portfolio.html" class="ajax btn anim-button trans-btn transition fl-l">
-                            <span>PHOTOGRAPHY</span><i class="fa fa-eye"></i></a>
-                    </div>
-                    <div class=intro__meta></div>
-                </div>
-            </header>
-            Here's a quick summary of my interests in robotics, digital art, and music
-            <br/>
-            <br/>
             <section>
-                <h2 class=text-meta><a href="projects.html"> Engineering Highlights
-                    <svg aria-hidden="true" focusable="false" class="icon icon--right" viewBox="0 0 100 100" width="10">
-                        <use xlink:href="#arrow-right"/>
-                    </svg>
-                </a>
-                </h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card__media">
-                            <img width=890 height=500
-                                 src="images/portfolios/engineering/lidar.png" alt=""/>
-                        </div>
-                    </div>
-                    <div class="column-border">
-                        Boreas Dataset
-                        <p> Autonomous Space Robotics Lab, UTIAS (2021)</p>
-                    </div>
-                    <div class="column-border">
-                        Large-Scale Simultaneous Power Measurement
-                        <p> Focused Ultrasound Lab, Sunnybrook Research Institute (2019) </p>
-                    </div>
-                    <div class="column">
-                        Radar Visualization and Calibration
-                        <p> aUToronto (Current) </p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2 class=text-meta><a href="portfolio.html"> Art Highlights
-                    <svg aria-hidden="true" focusable="false" class="icon icon--right" viewBox="0 0 100 100" width="10">
-                        <use xlink:href="#arrow-right"/>
-                    </svg>
-                </a>
-                </h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card__media">
-                            <img width=890 height=500
-                                 src="images/portfolios/photography/TablelandsPan.jpg" alt=""/>
-                        </div>
-                    </div>
-                    <div class="column-border">
-                        Tablelands of Gros Morne National Park
-                        <p> Canadian Geographic <br/> 2020-2021 Canadian Parks Calendar Series</p>
-                    </div>
+                <br/>
+                <h3>Notes</h3>
+                Some notes from lectures in the Engineering Science program at the University of Toronto. <br/>
+                <p> *Please note that these are typed up in real-time during lecture and there may be errors or incomplete sections. </p>
 
-                    <div class="column-border">
-                        Associate Diploma (ARCT) in Piano Performance
-                        <p> The Royal Conservatory of Music</p>
-                    </div>
-                    <div class="column">
-                        Director of Print Development and Design
-                        <p> The Reckoner of Marc Garneau CI (2020) </p>
-                    </div>
-                </div>
+                <a href="notes/notes_on_waves.pdf">Notes on Waves (PHY293) </a> <br/>
+                <a href="notes/Notes_on_Probability_and_Statistics.pdf"> Notes on Probability and Statistics (ECE286) </a>
+
+                <br/>
+                <br/>
+                <h3>Tools</h3>
+                <a href="https://github.com/AndrewZL/Image-Tools/blob/master/prep_lecture_notes.py">Lecture Slides Preparer</a>
+                <p>This converts lecture slides into a set of transparent images and optionally inverts the colour scheme to dark mode. This is great for those who like to annotate lecture slides in OneNote or similar software. </p>
+
+                <a href="https://github.com/AndrewZL/Uncertainty-Propagation"> Uncertainty Propagation Calculator and LaTeX Generator</a>
+                <p>This performs uncertainty propagation by method of quadrature (uncorrelated values) and generates a step-by-step calculation fully in LaTeX (to copy-paste into a report). There are still some bugs with how the LaTeX expression is formatted but those are easily fixable manually. </p>
+
             </section>
-            <br/>
         </div>
     </main>
 </div>
