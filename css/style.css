@@ -1503,6 +1503,7 @@ blockquote p {
     text-decoration: none;
     font-family: var(--secondary-font-family);
     text-transform: uppercase;
+    padding-right: 3em;
 }
 
 @media (min-width: 800px) {
@@ -2683,11 +2684,11 @@ blockquote p {
     transition-delay: 0.2s;
     opacity: 0;
     z-index: 10;
-    padding-left: 10%;
+    padding-left: 15%;
 }
 
 .wh-info-box a {
-    font-size: 16px;
+    font-size: 18px;
     padding-right: 5%;
     justify-content: center;
     font-family: 'AvenirNextCyrMedium';
@@ -2706,7 +2707,7 @@ blockquote p {
     margin-top: 10px;
     padding-right: 10%;
     float: left;
-    font-size: 12px;
+    font-size: 14px;
     /*text-transform:uppercase;*/
     position: relative;
 }
