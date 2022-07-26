@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link type=text/css rel=stylesheet
+          href=css/style.css
+          media=screen>
+    <link type=text/css rel=stylesheet
+          href=css/plugins.css
+          media=screen>
+    <noscript>
+        <link type=text/css rel=stylesheet
+              href=css/style.css
+              media=screen>
+    </noscript>
+    <title>Portfolio | Andrew Zou Li</title>
+</head>
+<body>
+<div class="loader">
+    <div class="tm-loader">
+        <div id="circle"></div>
+    </div>
+</div>
+<!--================= main start ================-->
+    <!--=============== header ===============-->
+    <!--=============== wrapper ===============-->
+    <div class=hidden>
+        <svg>
+            <defs/>
+            <symbol id="arrow-down" viewBox="0 0 16 16"><title>down arrow</title>
+                <path d="M8 16 0 7.969l.77-.774 6.682 6.697V0h1.096v13.892l6.682-6.696.77.773z" fill-rule="nonzero"/>
+            </symbol>
+            <symbol id="arrow-external" viewBox="0 0 12 12"><title>external link</title>
+                <path d="M11.657.343l-.022 11.336-1.092.002.01-9.46L.73 12.044l-.774-.774 9.823-9.823-9.46.01L.32.364z"
+                      fill-rule="nonzero"/>
+            </symbol>
+            <symbol id="arrow-left" viewBox="0 0 16 16"><title>left arrow</title>
+                <path d="M0 8l8.031-8 .774.77-6.697 6.682H16v1.096H2.108l6.696 6.682-.773.77z" fill-rule="nonzero"/>
+            </symbol>
+            <symbol id="arrow-right" viewBox="0 0 16 16"><title>right arrow</title>
+                <path d="M16 8l-8.031 8-.774-.77 6.697-6.682H0V7.452h13.892L7.196.77 7.969.0z" fill-rule="nonzero"/>
+            </symbol>
+            <symbol id="arrow-up" viewBox="0 0 16 16"><title>up arrow</title>
+                <path d="M8 0l8 8.031-.77.774-6.682-6.697V16H7.452V2.108L.77 8.804.0 8.031z" fill-rule="nonzero"/>
+            </symbol>
+            <!--        <symbol id="close" viewBox="0 0 12 12"><title>close</title>-->
+            <!--            <path d="M10.596.695l.71.71L6.71 6l4.596 4.595-.71.71L6 6.71l-4.594 4.595-.71-.71L5.29 6 .695 1.405l.71-.71L6 5.29 10.596.695z"-->
+            <!--                  fill-rule="nonzero"/>-->
+            <!--        </symbol>-->
+            <!--        <symbol id="menu" viewBox="0 0 12 11"><title>menu</title>-->
+            <!--            <path d="M12.001 9v1.004H-.001V9h12.002zm0-4.502v1.004H-.001V4.498h12.002zm0-4.498v1.004H-.001V0h12.002z"-->
+            <!--                  fill-rule="nonzero"/>-->
+            <!--        </symbol>-->
+            <symbol id="mode-dark" viewBox="0 0 12 12"><title>dark mode</title>
+                <path d="M3.28.65l.11-.054.339-.151.395-.146.226-.07.31-.079.217-.045.236-.04.173-.023.306-.028a6 6 0 016.404 5.761L12 6A6 6 0 110 6l.007-.287.02-.294c.017-.167.04-.331.069-.494l.033-.166.06-.259.028-.103.045-.157.084-.252a5.96 5.96.0 01.124-.32l.066-.15.114-.238c.182-.356.398-.692.644-1.002l.239-.284.119-.128.178-.18.127-.12.258-.221.25-.193.19-.134.179-.116L3.1.746 3.28.65zM6 11a5 5 0 005-5H1a5 5 0 005 5z"
+                      fill-rule="evenodd"/>
+            </symbol>
+            <symbol id="mode-light" viewBox="0 0 12 12"><title>light mode</title>
+                <path d="M8.72 11.35l-.11.054-.339.151-.395.146-.226.07-.31.079-.217.045-.236.04-.173.023-.306.028A6 6 0 01.004 6.225L0 6a6 6 0 1112 0l-.007.287-.02.294a5.998 5.998.0 01-.069.494l-.033.166-.06.259-.028.103-.045.157-.084.252a5.96 5.96.0 01-.124.32l-.066.15-.114.238a6.006 6.006.0 01-.644 1.002l-.239.284-.119.128-.178.18-.127.12-.258.221-.25.193-.19.134-.179.116-.267.156-.18.096zM6 1A5 5 0 001 6h10A5 5 0 006 1z"
+                      fill-rule="evenodd"/>
+            </symbol>
+        </svg>
+    </div>
+    <header class=header role=banner>
+        <a href=index.html class=header__title data-page-link>
+            andrew zou li</a>
+        <nav class=header__nav role=navigation data-nav>
+            <button class="header__menu-toggle button button--toggle" data-menu-toggle aria-expanded=false
+                    aria-controls=#menu>
+                    <span class="button__icon button__icon--default"><svg aria-hidden="true" focusable="false"
+                                                                          class="icon icon--left" viewBox="0 0 100 100"
+                                                                          width="16"><use
+                            xlink:href="#menu"/></svg></span><span class="button__icon button__icon--active"><svg
+                    aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100" width="16"><use
+                    xlink:href="#close"/></svg></span>Menu
+            </button>
+            <ul id=menu>
+                <li><a href=index.html title=About aria-current=page>About</a></li>
+                <li><a class=is-active href=portfolio.html title=portfolio aria-current=page>Photography</a></li>
+<!--                <li><a href=notes.html title=notes>Resources</a></li>-->
+                <li>
+                    <button class="header__theme-toggle button button--toggle" data-theme-toggle aria-pressed=false>
+                            <span class="button__icon button__icon--default">
+                        <svg aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100"
+                             width="12"><use xlink:href="#mode-dark"/></svg>Dark Mode</span>
+                        <span class="button__icon button__icon--active">
+                            <svg aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100"
+                                 width="12"><use xlink:href="#mode-light"/></svg>Light Mode</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id=content class=container3>
+        <main>
+            <div>
+                <div class="content2 ">
+                    <section class="no-padding no-border">
+                        <!-- fixed-info-container -->
+                        <div class="fixed-info-container">
+                            <!-- Filters-->
+                            <div class="filter-holder filter-vis-column">
+                                <div class="gallery-filters">
+                                    <a href="#" class="gallery-filter gallery-filter-active" data-filter="*">All</a>
+                                    <a href="#" class="gallery-filter " data-filter=".landscapes">Landscapes</a>
+                                    <a href="#" class="gallery-filter" data-filter=".wildlife">Wildlife</a>
+                                    <a href="#" class="gallery-filter" data-filter=".architecture">Architecture</a>
+                                </div>
+                            </div>
+                            <!-- Filters end -->
+                        </div>
+                        <!-- fixed-info-container end-->
+                        <!-- filters end -->
+                        <!-- resize-carousel-holder-->
+                        <div class="resize-carousel-holder vis-info">
+                            <!-- gallery-items -->
+                            <div class="gallery-items hid-port-info">
+                                <!-- 1 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Flower on a Brushtip
+                                                    </a>
+                                                    <span class="folio-cat">Huangshan, China</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/brushtip.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 1 end -->
+                                <!-- 2 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Enroute to Grinnel Glacier
+                                                    </a>
+                                                    <span class="folio-cat">Glacier National Park, Montana, USA</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/grinnelglacier.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 end -->
+                                <!-- 3 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Cameron Falls
+                                                    </a>
+                                                    <span class="folio-cat">Waterton Lakes National Park, Alberta, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/cameronfalls.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 end -->
+                                <!-- 4 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Medicine Lake
+                                                    </a>
+                                                    <span class="folio-cat">Jasper National Park, Alberta, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/jasper.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 4 end -->
+                                <!-- 5 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Driftwood
+                                                    </a>
+                                                    <span class="folio-cat">Waterton Lakes National Park, Alberta, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/watertondriftwood.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 5 end -->
+                                <!-- 6 -->
+                                <div class="gallery-item landscapes architecture">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Fogo Island Inn
+                                                    </a>
+                                                    <span class="folio-cat">Newfoundland, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/fogoisland.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 6 end -->
+                                <!-- 7 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Pissing Mare Falls
+                                                    </a>
+                                                    <span class="folio-cat">Gros Morne National Park, Newfoundland, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/pissingmare.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 7 end -->
+                                <!-- 8 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        House in the Mist
+                                                    </a>
+                                                    <span class="folio-cat">Skerwink Trail, Newfoundland, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/skerwink.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 8 end -->
+                                <!-- 9 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Twin Peaks
+                                                    </a>
+                                                    <span class="folio-cat">Gros Morne National Park, Newfoundland, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/grosmorne1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 9 end -->
+                                <!-- 10 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Maligne Lake
+                                                    </a>
+                                                    <span class="folio-cat">Jasper National Park, Alberta, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/malignelake.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 10 end -->
+                                <!-- 11 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Pyramid Lake Reflections
+                                                    </a>
+                                                    <span class="folio-cat">Jasper National Park, Alberta, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/pyramidlake.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 11 end -->
+                                <!-- 12 -->
+                                <div class="gallery-item wildlife">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Mountain Goat on Highline Trail
+                                                    </a>
+                                                    <span class="folio-cat">Glacier National Park, Montana, USA</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/goat.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 12 end -->
+                                <!-- 13 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Above the Clouds I
+                                                    </a>
+                                                    <span class="folio-cat">Banff National Park, Alberta, Canada </span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/banff1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 13 end -->
+                                <!-- 14 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Above the Clouds II
+                                                    </a>
+                                                    <span class="folio-cat">Banff National Park, Alberta, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/banff2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 14 end -->
+                                <!-- 15 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Wild Goose Island
+                                                    </a>
+                                                    <span class="folio-cat">Glacier National Park, Montana, USA</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/stmary.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 15 end -->
+                                <!-- 16 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Going to the Sun Road
+                                                    </a>
+                                                    <span class="folio-cat">Glacier National Park, Montana, USA</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/glacierroad.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 16 end -->
+                                <!-- 17 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Scottish Highlands
+                                                    </a>
+                                                    <span class="folio-cat">Scotland, UK</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/highlands.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 17 end -->
+                                <!-- 18 -->
+                                <div class="gallery-item architecture">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Atlanta Marriott Marquis
+                                                    </a>
+                                                    <span class="folio-cat">Atlanta, Georgia, USA (Honourable Mention, RMSP 2020 Photo Contest)</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/atlanta.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 18 end -->
+                                <!-- 19 -->
+                                <div class="gallery-item architecture">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Taiyuan Museum of Art
+                                                    </a>
+                                                    <span class="folio-cat">Taiyuan, Shanxi, China</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/taiyuan.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 19 end -->
+                                <!-- 20 -->
+                                <div class="gallery-item landscapes">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Green Gardens
+                                                    </a>
+                                                    <span class="folio-cat">Gros Morne National Park, Newfoundland, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/gardens.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 20 end -->
+                                <!-- 21 -->
+                                <div class="gallery-item architecture">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a>
+                                                        Solar Panels
+                                                    </a>
+                                                    <span class="folio-cat">Toronto, Ontario, Canada</span>
+                                                </div>
+                                            </div>
+                                            <img draggable="false" ondragstart="return false;"
+                                                 src="images/portfolios/photography/mitchell.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 20 end -->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+<footer class=footer role=contentinfo>
+    <div class="policy-box">
+        <span>&#169; Andrew Zou Li 2022  /  All rights reserved. </span>
+    </div>
+    <div class="footer-social">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/andrewzouli/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li><a href="https://github.com/AndrewZL" target="_blank">
+                <i class="fab fa-github"></i>
+            </a></li>
+        </ul>
+    </div>
+</footer>
+<script src="js/extra.js" media="screen"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
