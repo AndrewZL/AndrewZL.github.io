@@ -64,7 +64,7 @@
     --base-grid-gap: calc(var(--base-spacing) * 2);
     --auto-grid-min-size: 12rem;
     --base-outer-padding: var(--base-spacing);
-    --large-outer-padding: calc(var(--base-spacing) * 2);
+    --large-outer-padding: calc(var(--base-spacing) * 16);
     --xsmall-image-width: 400px;
     --small-image-width: 800px;
     --base-image-width: 1200px;
