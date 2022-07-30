@@ -68,34 +68,43 @@
         <a href=index.html class=header__title data-page-link>
             andrew zou li</a>
         <nav class=header__nav role=navigation data-nav>
+            <div style="display: flex">
             <button class="header__menu-toggle button button--toggle" data-menu-toggle aria-expanded=false
                     aria-controls=#menu>
                     <span class="button__icon button__icon--default"><svg aria-hidden="true" focusable="false"
                                                                           class="icon icon--left" viewBox="0 0 100 100"
                                                                           width="16"><use
-                            xlink:href="#menu"/></svg></span><span class="button__icon button__icon--active"><svg
-                    aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100" width="16"><use
-                    xlink:href="#close"/></svg></span>Menu
+                            xlink:href="#menu"/></svg></span>
+                <span class="button__icon button__icon--active"><svg
+                        aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100" width="16"><use
+                        xlink:href="#close"/></svg></span>Menu
             </button>
             <ul id=menu>
-                <li><a href=index.html title=About aria-current=page>About</a></li>
+                <li><a href=index.html title=About>About</a></li>
                 <li><a class=is-active href=portfolio.html title=portfolio aria-current=page>Photography</a></li>
-<!--                <li><a href=notes.html title=notes>Resources</a></li>-->
-                <li>
-                    <button class="header__theme-toggle button button--toggle" data-theme-toggle aria-pressed=false>
-                            <span class="button__icon button__icon--default">
-                        <svg aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100"
-                             width="12"><use xlink:href="#mode-dark"/></svg>Dark Mode</span>
-                        <span class="button__icon button__icon--active">
-                            <svg aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100"
-                                 width="12"><use xlink:href="#mode-light"/></svg>Light Mode</span>
-                    </button>
-                </li>
             </ul>
+            <button class="header__theme-toggle button button--toggle" data-theme-toggle aria-pressed=false>
+                    <span class="button__icon button__icon--default">
+                <svg aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100"
+                     width="12"><use xlink:href="#mode-dark"/></svg>Dark Mode</span>
+                <span class="button__icon button__icon--active">
+                    <svg aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100"
+                         width="12"><use xlink:href="#mode-light"/></svg>Light Mode</span>
+            </button>
+        </div>
         </nav>
     </header>
     <div id=content class=container3>
         <main>
+            <div class="nav-overlay"></div>
+            <div class="nav-inner isDown">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> About </a></li>
+                        <li><a href="portfolio.html" class="active-entry"> Photography </a></li>
+                    </ul>
+                </nav>
+            </div>
             <div>
                 <div class="content2 ">
                     <section class="no-padding no-border">

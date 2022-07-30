@@ -390,6 +390,11 @@ function initDogma() {
         hideShare();
 		return false;
     });
+    no.on("scroll", function() {
+        hidemenu();
+        hideShare();
+		return false;
+    });
 	$(".nav-button").attr("onclick","return true");
     $("nav li.subnav ").append('<i class="fa fa-angle-double-down subnavicon"></i>');
     $(".nav-inner nav li").on("mouseenter", function() {
