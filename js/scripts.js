@@ -358,7 +358,7 @@ function initDogma() {
 		return false;
     });
 // header functions +  menu  ------------------
-    var cm = $(".nav-button");
+    var cm = $(".header__menu-toggle");
     var nh = $(".nav-inner");
     var no = $(".nav-overlay , .close-share");
     function showmenu() {

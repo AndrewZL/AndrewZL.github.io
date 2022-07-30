@@ -76,7 +76,6 @@
         <ul id=menu>
             <li><a class=is-active href=index.html title=About aria-current=page>About</a></li>
             <li><a href=portfolio.html title=portfolio>Photography</a></li>
-            <!--            <li><a href=notes.html title=notes>Resources</a></li>-->
             <li>
                 <button class="header__theme-toggle button button--toggle" data-theme-toggle aria-pressed=false>
                             <span class="button__icon button__icon--default">
@@ -86,13 +85,22 @@
                             <svg aria-hidden="true" focusable="false" class="icon icon--left" viewBox="0 0 100 100"
                                  width="12"><use xlink:href="#mode-light"/></svg>Light Mode</span>
                 </button>
-                <!--            </li>-->
-                <!--        </ul>-->
+            </li>
+        </ul>
     </nav>
 </header>
 <div id=content class=container>
     <main id=main class=main role=main data-main-wrapper>
         <div data-main-content>
+            <div class="nav-overlay"></div>
+            <div class="nav-inner isDown">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="ajax active"> About </a></li>
+                        <li><a href="portfolio.html" class="ajax"> Photography </a></li>
+                    </ul>
+                </nav>
+            </div>
             <header class=intro>
                 <div class=intro__body>
                     <div class=intro__back></div>
@@ -107,14 +115,15 @@
                 </div>
             </header>
             <section>
-                My goal is to design smarter autonomous robots to reduce the amount of dangerous and tedious tasks in our lives.
+                My goal is to design smarter autonomous robots to reduce the amount of dangerous and tedious tasks in
+                our lives.
                 I also just don't like chores, so I'm always trying to build a robot to do them for me.
                 Previously, I studied digital arts and music, which I continue now by spending unhealthy amounts of time
                 tweaking aesthetic details with headphones plugged in.
                 Lastly, I really enjoy travelling and capturing the tranquillity of nature through my photographs. <br/>
 
-                Please <a href="https://www.linkedin.com/in/andrewzouli/"> contact me </a> if you would like to work
-                together or order a print!
+<!--                Please <a href="https://www.linkedin.com/in/andrewzouli/"> contact me </a> if you would like to work-->
+<!--                together or order a print!-->
                 <br/>
                 <br/>
                 <h2 class="text-meta">
@@ -150,6 +159,12 @@
                         <p class="text-sml"> Canadian Geographic </p>
                         <span class="text-meta"> Canadian Parks Calendar Series 2020-2021</span>
                     </div>
+                </div>
+                <div class="policy-box">
+                    Avenir Next <br/>
+                    HTML/CSS/jQuery <br/>
+
+
                 </div>
             </section>
         </div>
