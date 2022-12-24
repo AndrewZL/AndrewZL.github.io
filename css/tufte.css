@@ -1,0 +1,112 @@
+:root {
+  /* --- Colors --- */
+
+  --background-color: #fffff8;
+
+  --color-text: #111;
+  --color-text-secondary: #111;
+  --color-link: inherit;
+  --color-sidenote: #111;
+
+  --color-inline-code: #111;
+  --color-inline-code-bg: rgba(0, 0, 0, 0);
+
+  /* TODO(jez) Double check these colors */
+  --color-border: rgba(0, 0, 0, 0);
+  --color-border-heavy: #000;
+
+  /* TODO(jez) Make tables look more like tufte-pandoc-css */
+  --color-table-heading: var(--background-color);
+
+  /* --- Text --- */
+
+  --font-family-prose: "Minion Pro", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  --font-family-heading: var(--font-family-prose);
+  --font-family-code: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --side-note-number-font-family: et-book-roman-old-style, Palatino, Georgia, serif;
+
+  --line-height: 30px;
+  --font-size: 21px;
+
+  --inline-code-font-size: 16px;
+  --code-block-font-size: 15px;
+  --line-numbers-font-size: 13px;
+
+  --side-note-line-height: 24px;
+  --side-note-font-size: 16px;
+  --side-note-code-font-size: 12px;
+  --side-note-baseline-offset: 4.5px;
+  --side-note-text-indent: -8px;
+
+  --heading-font-weight: 400;
+
+  --title-font-size: 48px;
+  --title-code-font-size: 39px;
+  --title-line-height: 48px;
+  --title-margin-top: 90px;
+
+  --h1-font-size: 33px;
+  --h1-code-font-size: 27px;
+  --h1-line-height: 33px;
+  --h1-margin-top: 60px;
+  --h1-margin-bottom: 21px;
+
+  --h2-font-size: 26px;
+  --h2-code-font-size: 20px;
+  --h2-line-height: 26px;
+  --h2-margin-top: 60px;
+  --h2-margin-bottom: 21px;
+
+  --figcaption-line-height: 24px;
+  --figcaption-font-size: 18px;
+  --figcaption-code-font-size: 14px;
+  --figcaption-gap: 7px;
+  --captioned-figure-gap: 12px;
+
+  --table-line-height: 26px;
+  --table-font-size: 21px;
+  --table-code-font-size: 16px;
+
+  --nav-toc-font-size: 15px;
+  --nav-toc-code-font-size: 12px;
+  --nav-toc-indent: 16px;
+}
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --background-color: #111;*/
+
+/*    --color-text: #fffff8;*/
+/*    --color-text-secondary: #fffff8;*/
+/*    --color-link: inherit;*/
+/*    --color-sidenote: #fffff8;*/
+
+/*    --color-inline-code: #fffff8;*/
+/*    --color-inline-code-bg: inherit;*/
+
+/*    --color-border: inherit;*/
+/*    --color-border-heavy: #fff;*/
+/*  }*/
+/*}*/
+
+h1:not(.title), h2 {
+  font-style: italic;
+}
+
+table {
+  border-width: 2px;
+}
+
+table, table td, table th {
+  border-left: none;
+  border-right: none;
+}
+
+table td {
+  border-top: none;
+  border-bottom: none;
+}
+
+table td, table th {
+  min-width: 120px;
+}

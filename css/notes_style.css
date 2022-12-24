@@ -73,7 +73,7 @@
     --base-thumb-width: 300px;
     --small-thumb-width: 100px;
     --color-black: #080812;
-    --color-near-black: #171717;
+    --color-near-black: #191919;
     --color-dark-grey: #666;
     --color-mid-grey: #b0b0b0;
     --color-light-grey: #E9E9E9;
@@ -87,11 +87,11 @@
     --secondary-background-color: var(--color-black);
     --tertiary-background-color: var(--color-light-grey);
     --small-font-size: 0.66667rem;
-    --base-font-size: 1rem;
-    --smedium-font-size: 1.333rem;
-    --medium-font-size: 1.555rem;
-    --large-font-size: 1.777rem;
-    --xlarge-font-size: 2.239rem;
+    --base-font-size: 1.3rem;
+    --smedium-font-size: 1.433rem;
+    --medium-font-size: 1.655rem;
+    --large-font-size: 1.877rem;
+    --xlarge-font-size: 2.339rem;
     --base-font-family: "AvenirNextCyrMedium",
     Helvetica,
     sans-serif;
@@ -403,7 +403,7 @@ html {
     color: var(--base-font-color);
     font-size: clamp(var(--min-font-size), calc(35% + 1vw), var(--max-font-size));
     line-height: var(--base-line-height);
-    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: auto;
     background: var(--base-background-color);
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
@@ -430,350 +430,7 @@ body {
 /*@-o-viewport {width: device-width;}*/
 /*@-ms-viewport {width: device-width;}*/
 /*@viewport {width: device-width;}*/
-/*--------------Typography--------------------------------------*/
-main {
-    display: block;
-    grid-column: 1/-1
-}
 
-section {
-    margin: 0 0 var(--base-spacing)
-}
-
-section > *:first-child {
-    margin-bottom: var(--base-grid-gap)
-}
-
-hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-    margin: calc(var(--base-spacing) * 2) 0;
-    border: none;
-    border-top: var(--base-border)
-}
-
-pre {
-    font-family: monospace, monospace;
-    font-size: 1em
-}
-
-* {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-kerning: auto;
-    font-kerning: auto
-}
-
-abbr[title] {
-    border-bottom: none;
-    text-decoration: underline;
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted
-}
-
-b,
-strong {
-    font-weight: bolder
-}
-
-code,
-kbd,
-samp {
-    font-family: monospace, monospace;
-    font-size: 1em
-}
-
-small {
-    font-size: var(--small-font-size)
-}
-
-sub,
-sup {
-    position: relative;
-    vertical-align: baseline;
-    font-weight: 400;
-    font-family: var(--secondary-font-family);
-    text-transform: uppercase;
-    letter-spacing: -.05em;
-    font-size: 75%;
-    line-height: 0
-}
-
-sub {
-    bottom: -.75em
-}
-
-sup {
-    top: -.75em
-}
-
-h1 sup,
-h2 sup {
-    font-size: 50%;
-    top: -1em
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    pointer-events: none;
-    border-style: none;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-}
-
-figure,
-iframe,
-video {
-    margin: 0 0 calc(var(--base-spacing) / 2)
-}
-
-label {
-    font-size: var(--base-font-size);
-    cursor: pointer
-}
-
-input,
-optgroup,
-select,
-textarea {
-    margin: 0;
-    padding: calc(var(--base-spacing) / 2) calc(var(--base-spacing) / 1.5);
-    font-family: inherit;
-    font-size: 100%;
-    color: inherit;
-    line-height: var(--base-line-height);
-    border-radius: var(--min-border-radius);
-    border: var(--base-border);
-    background: 0 0;
-    transition: all var(--base-duration) var(--base-timing)
-}
-
-label > input,
-label > textarea {
-    margin-top: calc(var(--base-spacing) / 2)
-}
-
-input:hover,
-optgroup:hover,
-select:hover,
-textarea:hover,
-button:hover {
-    border-color: currentColor
-}
-
-input,
-optgroup,
-select,
-textarea {
-    width: 100%
-}
-
-button,
-input {
-    overflow: visible
-}
-
-button,
-select {
-    text-transform: none
-}
-
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-    -webkit-appearance: button
-}
-
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-    border-style: none;
-    padding: 0
-}
-
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-    outline: 1px dotted ButtonText
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0
-}
-
-legend {
-    box-sizing: border-box;
-    color: inherit;
-    display: table;
-    max-width: 100%;
-    padding: 0;
-    white-space: normal
-}
-
-progress {
-    vertical-align: baseline
-}
-
-textarea {
-    overflow: auto
-}
-
-[type=checkbox],
-[type=radio] {
-    box-sizing: border-box;
-    padding: 0
-}
-
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-    height: auto
-}
-
-[type=search] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px
-}
-
-[type=search]::-webkit-search-decoration {
-    -webkit-appearance: none
-}
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit
-}
-
-details {
-    display: block
-}
-
-summary {
-    display: list-item
-}
-
-a {
-    color: currentColor;
-    background-color: transparent;
-    text-decoration: underline;
-    text-decoration-thickness: var(--base-border-weight);
-    text-underline-offset: var(--min-outline-offset);
-    transition: color var(--base-duration) var(--base-timing)
-}
-
-a:hover {
-    color: var(--base-accent-color)
-}
-
-::-moz-selection {
-    background: var(--base-accent-color);
-    color: #fff;
-    text-shadow: none
-}
-
-::selection {
-    background: var(--base-accent-color);
-    color: #fff;
-    text-shadow: none
-}
-
-.focus-outline *:focus {
-    outline: var(--base-focus);
-    outline-offset: var(--base-outline-offset)
-}
-
-.no-focus-outline *:focus {
-    outline: none
-}
-
-ul,
-ol,
-dl,
-dd {
-    padding: 0;
-    margin: 0 0 var(--base-spacing) var(--base-spacing)
-}
-
-dt {
-    font-weight: 700
-}
-
-dd {
-    display: inline-block;
-    margin: 0
-}
-
-template {
-    display: none
-}
-
-[hidden] {
-    display: none
-}
-
-h1 {
-    font-size: 4.46666666667em;
-    text-transform: uppercase;
-    font-weight: 400;
-    line-height: 1.17em;
-}
-
-h2 {
-    font-size: 3.2em;
-    font-weight: 300;
-}
-
-h3 {
-    font-size: 2em;
-}
-
-h4 {
-    font-size: 1.5em;
-    font-weight: 200;
-}
-
-h5 {
-    font-size: 1.0em;
-    font-weight: 200;
-}
-
-h6 {
-    font-size: 0.9em;
-    font-weight: 200;
-}
-
-p {
-    text-align: left;
-    font-size: 15px;
-    line-height: 24px;
-    padding-bottom: 10px;
-}
-
-blockquote {
-    float: left;
-    padding: 10px 20px;
-    margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 15px solid #eee;
-}
-
-blockquote p {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-style: italic;
-    color: #494949;
-}
 
 .accordion {
     margin-bottom: var(--base-spacing)
@@ -1470,6 +1127,8 @@ blockquote p {
     text-decoration: none;
     margin: 0 1.5em;
     line-height: 60px;
+    font-family: var(--secondary-font-family);
+
 }
 
 @media (min-width: 800px) {
@@ -1585,6 +1244,7 @@ blockquote p {
     flex-direction: column;
     justify-content: center;
     position: fixed;
+    text-decoration: none;
     z-index: 1;
     top: 0;
     left: 0;
@@ -4298,4 +3958,36 @@ article {
         -webkit-background-size: cover;
         background-position: center;
     }
+}
+
+
+.notes {
+  --extra-wide-scale-factor: 1.5;
+
+  --figcaption-line-height: 21px;
+  --figcaption-font-size: 14px;
+  --figcaption-code-font-size: 13px;
+  --figcaption-gap: 6px;
+  --captioned-figure-gap: 10px;
+
+  --table-line-height: 21px;
+  --table-font-size: 14px;
+  --table-code-font-size: 13px;
+
+  --nav-toc-font-size: 12px;
+  --nav-toc-code-font-size: 12px;
+  --nav-toc-indent: 15px;
+  --nav-toc-baseline-offset: 2px;
+
+  /* --- Layout --- */
+
+  --main-width: 745px;
+  /* The name doesn't indicate it, but this variable actually specifies an
+   * effective minimum width. (It didn't previously behave this way, but the
+   * change to do so was made in a backwards-compatible way, so the variable
+   * was not renamed.)
+   **/
+  --main-width-narrow: 550px;
+  --side-note-max-width: 300px;
+    padding: 3em;
 }

@@ -19,16 +19,29 @@
               media=screen>
     </noscript>
     <title> Andrew Zou Li</title>
+    <style>
+        #sketch {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-29MTYSP34H"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-29MTYSP34H');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-29MTYSP34H');
 </script>
 
 <body>
@@ -87,7 +100,9 @@
             </button>
             <ul id=menu>
                 <li><a class=is-active href=index.html title=About aria-current=page>About</a></li>
-                <li><a href=portfolio.html title=portfolio>Photography</a></li>
+                <li><a href=portfolio.html title=Portfolio>Photography</a></li>
+                <li><a href=notes.html title=Notes>Notes</a></li>
+
             </ul>
             <button class="header__theme-toggle button button--toggle" data-theme-toggle aria-pressed=false>
                     <span class="button__icon button__icon--default">
@@ -131,49 +146,73 @@
                 I also just don't like chores, so I'm always trying to build a robot to do them for me.
                 Previously, I studied digital arts and music, which I continue now by spending unhealthy amounts of time
                 tweaking aesthetic details with headphones plugged in.
-                Lastly, I really enjoy travelling and capturing the tranquillity of nature through my photographs. <br/>
-
-                <!--                Please <a href="https://www.linkedin.com/in/andrewzouli/"> contact me </a> if you would like to work-->
-                <!--                together or order a print!-->
-                <br/>
-                <br/>
-                <h2 class="text-meta">
+                Lastly, I really enjoy travelling and capturing the tranquillity of nature through my photographs.
+                <h4>
                     Publications
-                </h2>
-                <div class="grid-custom">
-                    <div class="card__media">
-                        <img width=890 height=500
-                             src="images/portfolios/engineering/lidar.png" alt=""/>
-                    </div>
-                    <div>
-                        Boreas: A Multi-Season Autonomous Driving Dataset
-                        <p class="text-sml">
-                            Under Review <br/>
-                        </p>
-                        <span class="text-meta">
-                            Keenan Burnett, David J. Yoon, Yuchen Wu, <b>Andrew Zou Li </b>, Haowei Zhang, Shichen Lu, Jingxing
+                </h4>
+                <div data-main-content>
+                    <section>
+                        <div class=grid-custom>
+                            <div class="card">
+                                <div class="card__media">
+                                    <img width=890 height=500 class=lazyload
+                                         src="images/portfolios/index/2022_manipulation.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                An Adaptive Robotics Framework for Chemistry Laboratory Automation
+                                <p class="text-sml">
+                                    Under Review
+                                    <br/>
+                                </p>
+                                <span class="text-meta">
+                            Naruki Yoshikawa*, <b> Andrew Zou Li* </b>, Kourosh Darvish*, Yuchi Zhao*, Haoping Xu*, Alán Aspuru-Guzik, Animesh Garg, Florian Shkurti
+                            </span>
+                                <br/>
+                                <p> * Equal Contribution</p>
+                                <a class=text-meta href="https://arxiv.org/abs/2212.09672">[paper]</a> &nbsp;
+                                <a class=text-meta href="https://ac-rad.github.io/arc-icra2023/">[website]</a> &nbsp;
+                                <a class=text-meta href="https://github.com/ac-rad">[code]</a> &nbsp;
+                            </div>
+                            <div class="card">
+                                <div class="card__media">
+                                    <img width=890 height=500
+                                         src="images/portfolios/index/2021_boreas.png" alt=""/>
+                                </div>
+                            </div>
+                            <div>
+                                Boreas: A Multi-Season Autonomous Driving Dataset
+                                <p class="text-sml">
+                                    International Journal of Robotics Research <br/>
+                                </p>
+                                <span class="text-meta">
+                            Keenan Burnett, David J. Yoon, Yuchen Wu, <b>Andrew Zou Li</b>, Haowei Zhang, Shichen Lu, Jingxing
                             Qian, Wei-Kang Tseng, Andrew Lambert, Keith Y.K. Leung, Angela P. Schoellig, Timothy D.
                             Barfoot
                             </span>
-                        <br/>
-                        <a class=text-meta href="https://arxiv.org/abs/2203.10168">[paper]</a> &nbsp;
-                        <a class=text-meta href="https://www.boreas.utias.utoronto.ca">[website]</a> &nbsp;
-                        <a class=text-meta href="https://github.com/utiasASRL/pyboreas">[code]</a>
-
-                    </div>
-                    <div class="card__media">
-                        <img width=890 height=500
-                             src="images/portfolios/photography/TablelandsPan.jpg" alt=""/>
-                    </div>
-                    <div>
-                        Tablelands of Gros Morne National Park
-                        <p class="text-sml"> Canadian Geographic </p>
-                        <span class="text-meta"> Canadian Parks Calendar Series 2020-2021</span>
-                    </div>
-                    <div class="policy-box">
-                        Avenir Next <br/>
-                        HTML/CSS/jQuery <br/>
-                    </div>
+                                <br/>
+                                <a class=text-meta href="https://arxiv.org/abs/2203.10168">[paper]</a> &nbsp;
+                                <a class=text-meta href="https://www.boreas.utias.utoronto.ca">[website]</a> &nbsp;
+                                <a class=text-meta href="https://github.com/utiasASRL/pyboreas">[code]</a>
+                            </div>
+                            <div class="card">
+                                <div class="card__media">
+                                    <img width=890 height=500
+                                         src="images/portfolios/index/2020_Tablelands.jpg" alt=""/>
+                                </div>
+                            </div>
+                            <div>
+                                Tablelands of Gros Morne National Park
+                                <p class="text-sml"> Canadian Geographic </p>
+                                <span class="text-meta"> Canadian Parks Calendar Series 2020-2021 (ISBN-10: 1525604317)</span>
+                                <br/>
+                            </div>
+                            <div class="policy-box">
+                                Avenir Next <br/>
+                                HTML/CSS/jQuery <br/>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </section>
         </div>
