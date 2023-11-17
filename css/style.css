@@ -1,29 +1,5 @@
 @charset "utf-8";
-/*======================================
 
- [ -Main Stylesheet-
-  Theme: Dogma
-  Version: 1.0
-  Last change: 17/08/2018 ]
-  	+++Fonts +++
-	++++General Styles++++
-	++++Typography ++++
-	++++Page preload ++++
-	++++Content Styles ++++
-	++++Header ++++
-	++++Navigation ++++
-	++++Home pages ++++
-	++++Services ++++
-	++++Contact ++++
-	++++Share ++++
-	++++Footer ++++
-	++++Portfolio+++++
-	++++ Links ++++
-	++++Blog ++++
-	++++404 ++++
-	++++Media ++++
-
-*/
 /*-------------Import fonts ---------------------------------------*/
 @font-face {
     font-family: 'AvenirNextCyr';
@@ -47,11 +23,6 @@
     src: url('../fonts/AvenirNext/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
     url('../fonts/AvenirNext/AvenirNextCyr-Medium.woff') format('woff'),
     url('../fonts/AvenirNext/AvenirNextCyr-Medium.ttf') format('truetype')
-}
-
-@font-face {
-    font-family: 'MinionPro';
-    src: url('../fonts/MinionPro/MinionPro-Regular.otf') format("opentype")
 }
 
 /* root */
@@ -745,6 +716,7 @@ h4 {
 }
 
 h5 {
+    margin: 0;
     font-size: 1.0em;
     font-weight: 200;
 }
@@ -895,7 +867,7 @@ blockquote p {
 
 .card {
     position: relative;
-    margin: 0 0 calc(var(--base-spacing) * 3)
+    margin: 0.4em 0 0 0
 }
 
 .card a {
@@ -1007,9 +979,15 @@ blockquote p {
     padding: 0 var(--base-outer-padding)/5
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     .container {
         padding: 0 var(--large-outer-padding)
+    }
+}
+
+@media (min-width: 800px) and (max-device-width: 1000px) {
+    .container {
+        padding: 0 calc(var(--large-outer-padding)/2)
     }
 }
 
@@ -1075,7 +1053,7 @@ blockquote p {
 
 .grid-custom {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(18rem, 1.5fr));
     grid-column-gap: var(--base-grid-gap);
     margin: 0;
     padding: 0;
@@ -1084,12 +1062,11 @@ blockquote p {
 
 .grid-custom p {
     padding: 0;
-    margin: calc(var(--base-spacing) / 2) 0;
 }
 
 @media (min-width: 700px) {
     .grid-custom {
-        grid-template-columns: minmax(1rem, 20rem) minmax(12rem, 1fr);
+        grid-template-columns: minmax(0.75rem, 12rem) minmax(18rem, 1.5fr);
     }
 }
 
@@ -1468,25 +1445,25 @@ blockquote p {
 
 .header__title {
     text-decoration: none;
-    margin: 0 1.5em;
+    margin: 0 0.5em 0 1em;
     line-height: 60px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .header__title {
         font-size: var(--smedium-font-size);
-
+        margin: 0 0.5em 0 calc(var(--base-spacing) + 1.5em);
         grid-column: 1/2
     }
 }
 
 .header__menu-toggle {
     position: relative;
-    margin: 0 30px;
+    margin: 0 0;
     z-index: 2;
     transition: border-color var(--base-duration) var(--base-timing);
     display: inline-block;
-    padding: var(--base-spacing);
+    padding: 0 var(--base-spacing) 0 0;
     font-size: var(--small-font-size);
     text-decoration: none;
     font-family: var(--secondary-font-family);
@@ -1517,8 +1494,16 @@ blockquote p {
     font-family: var(--secondary-font-family);
     text-transform: uppercase;
     padding-right: 1.3em;
-    margin-right: 1.5em
 }
+
+@media (min-width: 400px) {
+    .header__theme-toggle {
+        margin-right: 1.5em
+
+    }
+}
+
+
 
 .nav-inner {
     position: fixed;
@@ -1576,7 +1561,7 @@ blockquote p {
     .header__nav {
         grid-column: 2/-1;
         justify-self: end;
-        margin-right: calc(var(--base-spacing) * -1)
+        margin-right: calc(var(--base-spacing) * 1)
     }
 }
 
@@ -1977,65 +1962,65 @@ blockquote p {
 /*	z-index:2;*/
 /*	opacity:1;*/
 /*}*/
-/*#wrapper{*/
-/*	height:100%;*/
-/*	margin-left:0;*/
-/*	vertical-align:top;*/
-/*	position: absolute;*/
-/*	left:0;*/
-/*	top:0;*/
-/*	right:0;*/
-/*	z-index:2;*/
-/*	width:100%;*/
-/*	overflow:hidden;*/
-/*}*/
-/*.content-holder{*/
-/*	vertical-align: top;*/
-/*	position: absolute;*/
-/*	left:0;*/
-/*	top: 0;*/
-/*	right: 0;*/
-/*	bottom:0;*/
-/*	z-index: 2;*/
-/*	-webkit-transition: all 500ms linear;*/
-/*    -moz-transition: all 500ms linear;*/
-/*    -o-transition: all 500ms linear;*/
-/*    -ms-transition: all 500ms linear;*/
-/*    transition: all 500ms linear;*/
-/*	padding-top:60px;*/
-/*}*/
+#wrapper2{
+	height:100%;
+	margin-left:0;
+	vertical-align:top;
+	position: absolute;
+	left:0;
+	top:0;
+	right:0;
+	z-index:2;
+	width:100%;
+	overflow:hidden;
+}
+.content-holder2{
+	vertical-align: top;
+	position: relative;
+	left:0;
+	top: 0;
+	right: 0;
+	bottom:0;
+	z-index: 2;
+	-webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    transition: all 500ms linear;
+	/*padding-top:60px;*/
+}
 /*.scale-bg2 {*/
 /*	opacity:0;*/
 /*}*/
-/*.container{*/
-/*	max-width: 1224px;*/
-/*	width:92%;*/
-/*	margin:0 auto;*/
-/*	position: relative;*/
-/*	z-index:2;*/
-/*}*/
-/*.content {*/
-/*	width:100%;*/
-/*	position:relative;*/
-/*	z-index:2;*/
-/*	float:left;*/
-/*	padding-bottom:50px;*/
-/*}*/
-/*.full-height {*/
-/*	height:100%;*/
-/*}*/
-/*.bg {*/
-/*	position:absolute;*/
-/*	top:0;*/
-/*	left:0;*/
-/*	width:100%;*/
-/*	height:100%;*/
-/*	background-size: cover;*/
-/*	background-attachment: scroll  ;*/
-/*	background-position: center  ;*/
-/*	background-repeat:repeat;*/
-/*	background-origin: content-box;*/
-/*}*/
+.container2{
+	max-width: 1224px;
+	width:92%;
+	margin:0 auto;
+	position: relative;
+	z-index:2;
+}
+.content2 {
+	width:100%;
+	position:relative;
+	z-index:2;
+	float:left;
+	padding-bottom:50px;
+}
+.full-height {
+	height:100%;
+}
+.bg2 {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-size: cover;
+	background-attachment: scroll  ;
+	background-position: center  ;
+	background-repeat:repeat;
+	background-origin: content-box;
+}
 /*.full-height-parallax {*/
 /*	position: absolute;*/
 /*	top:0;*/
@@ -2852,6 +2837,10 @@ blockquote p {
     visibility: visible;
 }
 
+.gallery-item:active .wh-info-box {
+    visibility: visible;
+}
+
 .gallery-item:hover .wh-info-box:before {
     width: 100%;
 }
@@ -3419,7 +3408,7 @@ blockquote p {
     text-align: left;
 }
 
-.show-info:hover .tooltip-info {
+.horizontal_item:hover .tooltip-info {
     visibility: visible;
     opacity: 1;
     bottom: 0;

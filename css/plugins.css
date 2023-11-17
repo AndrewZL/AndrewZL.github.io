@@ -8784,3 +8784,10 @@ readers do not read off random characters that represent icons */
 .fas {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900; }
+
+.owl-dot{ width:250px; text-align:left; padding:0px 10px;}
+.pagi-btn::before{content: ''; width:100% !important; height:5px !important; background:grey !important; display:table !important; margin:0px 0px 5px 0px !important; }
+
+.owl-dot.active .pagi-btn::before{ background:#cc0000 !important;}
+.owl-dot.active .pagi-btn{ color:#cc0000;}
+.pagi-btn{ position:relative;width:100%; background:transparent !important; text-align:left; border:none !important; cursor:pointer;padding-top:25px; font-size:16px;}

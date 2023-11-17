@@ -11,11 +11,17 @@
     <link type=text/css rel=stylesheet
           href=css/plugins.css
           media=screen>
+    <link type=text/css rel=stylesheet
+          href=css/extra.css
+          media=screen>
     <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
     <title>About - Andrew Zou Li</title>
     <noscript>
         <link type=text/css rel=stylesheet
               href=css/style.css
+              media=screen>
+        <link type=text/css rel=stylesheet
+              href=css/extra.css
               media=screen>
     </noscript>
     <title> Andrew Zou Li</title>
@@ -40,7 +46,6 @@
     }
 
     gtag('js', new Date());
-
     gtag('config', 'G-29MTYSP34H');
 </script>
 
@@ -101,7 +106,7 @@
             <ul id=menu>
                 <li><a class=is-active href=index.html title=About aria-current=page>About</a></li>
                 <li><a href=portfolio.html title=Portfolio>Photography</a></li>
-<!--                <li><a href=notes.html title=Notes>Notes</a></li>-->
+                <!--                <li><a href=notes.html title=Notes>Notes</a></li>-->
 
             </ul>
             <button class="header__theme-toggle button button--toggle" data-theme-toggle aria-pressed=false>
@@ -136,100 +141,146 @@
                             Engineering Science Student at the University of Toronto
                         </p>
                     </div>
-                    <div class=intro__meta>
-                    </div>
+                    <div class=intro__meta></div>
                 </div>
             </header>
             <section>
                 My goal is to design robots that will reduce the amount of dangerous and tedious tasks in our lives.
-                Currently, my research interests are in long-horizon planning and learning representations for robotics tasks.
-                I also don't like chores, so I'm always trying to build a robot that does them for me. <br>
+                To accomplish this, I hope to create methods that will enable robots to reason and act in diverse,
+                real-world situations.
+                My current interests are in long-horizon planning and learning representations for robotics tasks.
+                I also don't like chores, so I'm always trying to build a robot to do them for me. <br
+                    style="display: block; margin: 10px 0"/>
 
-                Outside of robotics, I studied music and digital arts.
-                I especially enjoy landscape photography and scenic hikes, and I'm fortunate to have had one of my works featured in Canadian Geographic's calendars. <br>
-                <br>
-
-                <table style="font-size: small">
+                <table style="border-spacing: 1.5em 0.3em; padding-bottom: 1.5em">
                     <tr>
-                        <td class="text-meta" style="vertical-align: top; padding-top: 5px">Current</td>
-                        <td>&nbsp;</td>
-                        <td class="blog-text" style="padding-top:0;margin-top:0;font-size: large"> Machine Learning Systems<a style="color:var(--base-accent-color);text-decoration: none" href="https://www.qualcomm.com/home"> @ Qualcomm</a> </td>
+                        <td rowspan=1 class="text-meta" style="vertical-align: top; padding-top:0.3em">Current</td>
+                        <td style="padding-top:0;padding-bottom:1em;line-height: 1.3">Machine Learning Systems, <a
+                                style="color:var(--base-accent-color);text-decoration: none"
+                                href="https://www.qualcomm.com/home">Qualcomm</a></td>
                     </tr>
                     <tr>
-                        <td class="text-meta" style="vertical-align: top; padding-top: 5px">Previous</td>
-                        <td>&nbsp;</td>
-                        <td class="blog-text" style="padding-top:0;margin-top:0;font-size: large"> Task and Motion Planning <a href="https://rvl.cs.toronto.edu/#/" style="color:var(--base-accent-color);text-decoration: none"> @ RVL</a> under Prof. Florian Shkurti <br>
-                            Autonomous Driving Dataset</span> <a href="http://asrl.utias.utoronto.ca/" style="color:var(--base-accent-color);text-decoration: none"> @ ASRL</a> under Prof. Tim Barfoot <br>
-                            Phased Array Power Measurement <a href="https://sunnybrook.ca/research/" style="color:var(--base-accent-color);text-decoration: none"> @ Sunnybrook Research Institute </a>
+                        <td rowspan=10 class="text-meta" style="vertical-align: top; padding-top:0.3em">Previous</td>
+                        <td style="padding-top:0;line-height: 1.3">Task and Motion Planning, <a
+                                style="color:var(--base-accent-color);text-decoration: none"
+                                href="https://rvl.cs.toronto.edu/#/">RVL</a> under Florian Shkurti
                         </td>
                     </tr>
+                    <tr>
+                        <td style="padding-top:0;line-height: 1.3">Autonomous Driving Dataset, <a
+                                style="color:var(--base-accent-color);text-decoration: none"
+                                href="http://asrl.utias.utoronto.ca/">ASRL</a> under Timothy Barfoot
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top:0;line-height: 1.3">Phased Array Power Measurement, <a
+                                style="color:var(--base-accent-color);text-decoration: none"
+                                href="https://sunnybrook.ca/research/">Sunnybrook Research Institute </a></td>
+                    </tr>
                 </table>
-                <h4>
-                    Publications
-                </h4>
-                <div data-main-content>
-                    <section>
-                        <div class=grid-custom>
-                            <div class="card">
-                                <div class="card__media">
-                                    <img width=890 height=500 class=lazyload
-                                         src="images/portfolios/index/2022_manipulation.png" alt="">
-                                </div>
-                            </div>
-                            <div>
-                                Chemistry Lab Automation via Constrained Task and Motion Planning
-                                    <p class="text-sml">
-                                    Under Review
-                                    <br/>
-                                </p>
-                                <span style="font-size: smaller">
-                            Naruki Yoshikawa*, <span style="color:var(--base-accent-color)"> Andrew Zou Li* </span>, Kourosh Darvish*, Yuchi Zhao*, Haoping Xu*, Artur Kuramshin, Alán Aspuru-Guzik, Animesh Garg, Florian Shkurti
-                            </span>
-                                <br/>
-                                <p> * Equal Contribution</p>
-                                <a class=text-meta href="https://arxiv.org/abs/2212.09672">[paper]</a> &nbsp;
-                                <a class=text-meta href="https://ac-rad.github.io/robot-chemist-tamp/">[website]</a> &nbsp;
-                                <a class=text-meta href="https://github.com/ac-rad">[code]</a> &nbsp;
-                            </div>
-                            <div class="card">
-                                <div class="card__media">
-                                    <img width=890 height=500
-                                         src="images/portfolios/index/2021_boreas.png" alt=""/>
-                                </div>
-                            </div>
-                            <div>
-                                Boreas: A Multi-Season Autonomous Driving Dataset
-                                <p class="text-sml">
-                                    International Journal of Robotics Research <br/>
-                                </p>
-                                <span style="font-size: smaller">
-                            Keenan Burnett, David J. Yoon, Yuchen Wu, <span style="color:var(--base-accent-color)"> Andrew Zou Li* </span>, Haowei Zhang, Shichen Lu, Jingxing
+
+                <div class=intro__meta></div>
+                <h5>
+                    Publications and Preprints
+                </h5>
+                <div class=grid-custom>
+                    <!-- STAMP -->
+                    <div class="card">
+                        <div class="card__media">
+                            <!--                            <img width=300 height=300 class=lazyload-->
+                            <!--                                 src="images/portfolios/index/2022_manipulation.png" alt="">-->
+                        </div>
+                    </div>
+                    <div>
+                        STAMP: Differentiable Task and Motion Planning via Stein Variational Gradient Descent
+                        <p class="text-sml pub">
+                            Conference on Robot Learning - Learning Effective Abstractions for Planning Workshop, 2023
+                            <br/>
+                        </p>
+                        <p class="author">
+                            Yewon Lee, Philip Huang, Krishna Murthy Jatavallabhula, <span
+                                style="color:var(--base-accent-color)"> Andrew Zou Li</span>, Fabian Damken, Eric
+                            Heiden, Kevin Smith, Derek Nowrouzezahrai, Fabio Ramos, Florian Shkurti
+                        </p>
+                        <a class="text-meta" href="https://arxiv.org/abs/2310.01775">[paper]</a> &nbsp;
+                    </div>
+                    <!-- Chem-->
+                    <div class="card">
+                        <div class="card__media">
+                            <img width=300 height=300 class=lazyload
+                                 src="images/portfolios/index/2022_manipulation_s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        Chemistry Lab Automation via Constrained Task and Motion Planning
+                        <p class="text-sml pub">
+                            Under Review
+                            <br/>
+                        </p>
+                        <p class="author">
+                            Naruki Yoshikawa*, <span style="color:var(--base-accent-color)"> Andrew Zou Li* </span>,
+                            Kourosh Darvish*, Yuchi Zhao*, Haoping Xu*, Artur Kuramshin, Alán Aspuru-Guzik, Animesh
+                            Garg, Florian Shkurti
+                        </p>
+                        <a class=text-meta href="https://arxiv.org/abs/2212.09672">[paper]</a> &nbsp;
+                        <a class=text-meta href="https://ac-rad.github.io/robot-chemist-tamp/">[website]</a> <br/> <br/>
+                        Large Language Models for Chemistry Robotics
+                        <p class="text-sml pub">
+                            Autonomous Robots, 2023
+                            <br/>
+                        </p>
+                        <p class="author">
+                            Naruki Yoshikawa*, Marta Skreta*, Kourosh Darvish*, Sebastian Arellano-Rubach, Zhi Ji, Lasse
+                            Bjørn Kristensen, <span style="color:var(--base-accent-color)"> Andrew Zou Li </span>, Yuchi
+                            Zhao, Haoping Xu, Artur Kuramshin, Alán Aspuru-Guzik, Florian Shkurti, Animesh Garg
+                        </p>
+                        <a class=text-meta
+                           href="https://link.springer.com/article/10.1007/s10514-023-10136-2">[paper]</a> &nbsp;
+                        <a class=text-meta href="https://ac-rad.github.io/clarify">[website]</a> &nbsp;
+                    </div>
+                    <!-- Boreas Dataset -->
+                    <div class="card">
+                        <div class="card__media">
+                            <img width=890 height=500
+                                 src="images/portfolios/index/2021_boreas.png" alt=""/>
+                        </div>
+                    </div>
+                    <div>
+                        Boreas: A Multi-Season Autonomous Driving Dataset
+                        <p class="text-sml pub">
+                            International Journal of Robotics Research, 2023 <br/>
+                        </p>
+                        <p class="author">
+                            Keenan Burnett, David J. Yoon, Yuchen Wu, <span style="color:var(--base-accent-color)"> Andrew Zou Li</span>,
+                            Haowei Zhang, Shichen Lu, Jingxing
                             Qian, Wei-Kang Tseng, Andrew Lambert, Keith Y.K. Leung, Angela P. Schoellig, Timothy D.
                             Barfoot
-                            </span>
-                                <br/>
-                                <a class=text-meta href="https://arxiv.org/abs/2203.10168">[paper]</a> &nbsp;
-                                <a class=text-meta href="https://www.boreas.utias.utoronto.ca">[website]</a> &nbsp;
-                                <a class=text-meta href="https://github.com/utiasASRL/pyboreas">[code]</a>
-                            </div>
-                            <div class="card">
-                                <div class="card__media">
-                                    <img width=890 height=500
-                                         src="images/portfolios/index/2020_Tablelands.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div>
-                                Tablelands of Gros Morne National Park
-                                <p class="text-sml"> Canadian Geographic </p>
-                                <span class="text-meta"> Canadian Parks Calendar Series 2020-2021 (ISBN-10: 1525604317)</span>
-                                <br/>
-                            </div>
-                            <div class="policy-box">
-                                Avenir Next <br/>
-                                HTML/CSS/jQuery <br/>
-                            </div>
-                        </div>
-                    </section>
+                        </p>
+                        <a class=text-meta href="https://arxiv.org/abs/2203.10168">[paper]</a> &nbsp;
+                        <a class=text-meta href="https://www.boreas.utias.utoronto.ca">[website]</a> &nbsp;
+                        <a class=text-meta href="https://github.com/utiasASRL/pyboreas">[code]</a>
+                    </div>
+                    <span class="text-meta pub"> (* = Equal Contribution)</span>
+                </div>
+                <div class=intro__meta></div>
+                <h5 style="margin-bottom: 0px">Arts</h5>
+                <p style="font-size: smaller; line-height: 1.5">
+                    Besides robotics, I studied a bit of music and digital arts.
+                    Some highlights include an Associate's Diploma in Piano Performance from the Royal Conservatory of
+                    Music and a photograph (below) published in Canadian Geographic's <a
+                        href="https://www.amazon.com/Canadian-Geographic-Parks-2020-Calendar/dp/1525604317"> Canadian
+                    Parks Calendar Series (2020-2021)</a>. The rest of my photography portfolio is <a href="portfolio.html">here</a>.
+                </p>
+                <img draggable="false" ondragstart="return false;"
+                     src="images/portfolios/photography/TablelandsPan.jpg" alt="">
+                <div class="policy-box" style="margin: 5em 0 10em">
+                    Typeface: Avenir Next <br/>
+                    Tools: HTML/CSS/jQuery <br/>
+                    <div class='box c1'></div>
+                    <div class='box c2'></div>
+                    <div class='box c3'></div>
+                    <div class='box c4'></div>
+                    <div class='box c5'></div>
                 </div>
             </section>
         </div>
