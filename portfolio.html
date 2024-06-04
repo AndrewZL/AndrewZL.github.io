@@ -24,11 +24,15 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-29MTYSP34H"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-29MTYSP34H');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-29MTYSP34H');
 </script>
 
 <body>
@@ -95,7 +99,7 @@
             <ul id=menu>
                 <li><a href=index.html title=About>About</a></li>
                 <li><a class=is-active href=portfolio.html title=Portfolio aria-current=page>Photography</a></li>
-<!--                <li><a href=notes.html title=Notes>Notes</a></li>-->
+                <!--                <li><a href=notes.html title=Notes>Notes</a></li>-->
 
             </ul>
             <button class="header__theme-toggle button button--toggle" data-theme-toggle aria-pressed=false>
@@ -551,6 +555,9 @@
     </div>
     <div class="footer-social">
         <ul>
+            <li><a href="https://scholar.google.com/citations?user=adt6iVYAAAAJ" target="_blank">
+                <i class="ai ai-google-scholar"></i>
+            </a></li>
             <li><a href="https://www.linkedin.com/in/andrewzouli/" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a></li>
