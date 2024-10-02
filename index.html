@@ -106,8 +106,7 @@
             <ul id=menu>
                 <li><a class=is-active href=index.html title=About aria-current=page>About</a></li>
                 <li><a href=portfolio.html title=Portfolio>Photography</a></li>
-                <!--                <li><a href=notes.html title=Notes>Notes</a></li>-->
-
+                <li><a href=blog.html title=Blog>Blog</a></li>
             </ul>
             <button class="header__theme-toggle button button--toggle" data-theme-toggle aria-pressed=false>
                     <span class="button__icon button__icon--default">
@@ -129,6 +128,7 @@
                     <ul>
                         <li><a href="index.html" class="active-entry"> About </a></li>
                         <li><a href="portfolio.html"> Photography </a></li>
+                        <li><a href="blog.html"> Blog </a></li>
                     </ul>
                 </nav>
             </div>
@@ -136,91 +136,139 @@
                 <div class=intro__body>
                     <div class=intro__back></div>
                     <div class=intro__desc>
-                        <h2 class=text-meta>Hi, I'm Andrew</h2>
-                        <p>
-                            Engineering Science Student at the University of Toronto
-                        </p>
+                        <div class=intro__meta style="margin-bottom: 0; padding-top: 0.5em"></div>
+                        <h2 class=text-meta style="margin-top: 0;">Hi, I'm Andrew!</h2>
+                        <!--                        <p>-->
+                        <!--                            Engineering Science Student at the University of Toronto-->
+                        <!--                        </p>-->
                     </div>
-                    <div class=intro__meta></div>
+                    <!--                    <div class=intro__meta></div>-->
                 </div>
             </header>
             <section>
-                My goal is to design robots that will reduce the amount of dangerous and tedious tasks in our lives.
-                To accomplish this, I hope to create methods that will enable robots to reason and act in diverse,
-                real-world situations.
-                My current interests are in long-horizon planning and learning representations for robotics tasks.
-                <br style="display: block; margin: 10px 0"/>
+                <!--                <div class=grid-custom>-->
+                <!--                    <div class="card">-->
+                <!--                        <div class="card__media">-->
+                <!--                            <img width=200 height=200 class=lazyload-->
+                <!--                                 src="images/portfolios/index/.png" alt="">-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                    <div style="margin: 0">-->
+                I'm a 4th-year undergraduate student at the University of Toronto studying <a
+                    href="https://engsci.utoronto.ca/program/what-is-engsci/">Engineering Science</a> with a
+                major in Robotics.
+                <br/>
+                <br/>
+                My goal is to design robots that will reduce the amount of dangerous and tedious tasks in our
+                lives.
+                To accomplish this, I hope to create methods that will enable robots to act in
+                diverse, real-world situations.
+                My current interests are in how robots can learn to reason about long-horizon problems and
+                understand the physical world.
+                <br/>
+                <br/>
 
-                <table style="border-spacing: 1.5em 0.3em; padding-bottom: 1.5em">
-                    <!--                    <tr>-->
-                    <!--                        <td rowspan=1 class="text-meta" style="vertical-align: top; padding-top:0.3em">Current</td>-->
-                    <!--                        <td style="padding-top:0;padding-bottom:1em;line-height: 1.3">Machine Learning Systems, <a-->
-                    <!--                                style="color:var(&#45;&#45;base-accent-color);text-decoration: none"-->
-                    <!--                                href="https://www.qualcomm.com/home">Qualcomm</a>-->
-                    <!--                        </td>-->
-                    <!--                    </tr>-->
+                <a class="email" href="7a767e7b63782d7679736572606d7862397b7e577a767e7b396263786578796378397476"
+                   rel="nofollow, noindex">Email</a> &nbsp;
+                <a href="https://www.linkedin.com/in/andrewzouli/" target="_blank">LinkedIn</a> &nbsp;
+                <a href="https://scholar.google.com/citations?user=adt6iVYAAAAJ" target="_blank">Google Scholar</a>
+
+
+                <!--                                        <br style="display: block; margin: 10px 0"/>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+
+                <table style="border-spacing: 1.5em 0.3em; padding-top: 1.5em; padding-bottom: 1.5em; font-size: smaller">
                     <tr>
-                        <td rowspan=10 class="text-meta" style="vertical-align: top; padding-top:0.3em">Previous</td>
-                        <td style="padding-top:0;line-height: 1.3">Machine Learning Systems, <a
-                                style="color:var(--base-accent-color);text-decoration: none"
+                        <td rowspan=1 class="text-meta" style="vertical-align: top; padding-top:0.3em">Current</td>
+                        <td style="padding-top:0;line-height: 1.5">Long-Horizon Imitation with Foundation Models, under
+                            <a href="https://www.cs.toronto.edu/~florian/">Florian Shkurti</a> and
+                            <a href="https://shuangli59.github.io/">Shuang Li</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan=10 class="text-meta" style="vertical-align: top; padding-top:1.3em">Previous</td>
+                        <td style="padding-top:1em;line-height: 1.5">On-Device AI, Machine Learning Systems at <a
                                 href="https://www.qualcomm.com/home">Qualcomm</a>
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding-top:0;line-height: 1.3">Task and Motion Planning, <a
-                                style="color:var(--base-accent-color);text-decoration: none"
+                        <td style="padding-top:0;line-height: 1.5">Task and Motion Planning, <a
                                 href="https://rvl.cs.toronto.edu/#/">RVL</a> under Florian Shkurti
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding-top:0;line-height: 1.3">Autonomous Driving Dataset, <a
-                                style="color:var(--base-accent-color);text-decoration: none"
-                                href="http://asrl.utias.utoronto.ca/">ASRL</a> under Timothy Barfoot
+                        <td style="padding-top:0;line-height: 1.5">Autonomous Driving Dataset, <a
+                                href="http://asrl.utias.utoronto.ca/">ASRL</a> under Tim Barfoot
                         </td>
                     </tr>
                     <tr>
                         <td style="padding-top:0;line-height: 1.3">Phased Array Power Measurement, <a
-                                style="color:var(--base-accent-color);text-decoration: none"
                                 href="https://sunnybrook.ca/research/">Sunnybrook Research Institute </a></td>
                     </tr>
                 </table>
 
                 <div class=intro__meta></div>
-                <h5>
+                <h5 class="text-meta">
                     Publications and Preprints
                 </h5>
                 <div class=grid-custom>
                     <!-- STAMP -->
                     <div class="card">
                         <div class="card__media">
-                            <img width=300 height=300 class=lazyload
+                            <img width=200 height=200 class=lazyload
                                  src="images/portfolios/index/2023_STAMP.png" alt="">
                         </div>
                     </div>
                     <div>
                         STAMP: Differentiable Task and Motion Planning via Stein Variational Gradient Descent
                         <p class="text-sml pub">
-                            Conference on Robot Learning - Learning Effective Abstractions for Planning Workshop, 2023
+                            Under Review
                             <br/>
                         </p>
                         <p class="author">
-                            Yewon Lee, Philip Huang, Krishna Murthy Jatavallabhula, <span
-                                style="color:var(--base-accent-color)"> Andrew Zou Li</span>, Fabian Damken, Eric
-                            Heiden, Kevin Smith, Derek Nowrouzezahrai, Fabio Ramos, Florian Shkurti
+                            Yewon Lee, <span style="color:var(--base-accent-color)"> Andrew Zou Li</span>, Philip Huang,
+                            Eric
+                            Heiden, Krishna Murthy Jatavallabhula, Fabian Damken, Kevin Smith, Derek Nowrouzezahrai,
+                            Fabio Ramos, Florian Shkurti
                         </p>
                         <a class="text-meta" href="https://arxiv.org/abs/2310.01775">[paper]</a> &nbsp;
+                        <a class="text-meta" href="https://rvl.cs.toronto.edu/stamp">[website]</a> &nbsp;
+
+                        <p class="text-sml pub" style="margin-top: 0.5em">
+                            An earlier version appears in Conference on Robot Learning - Learning Effective Abstractions
+                            for Planning Workshop, 2023</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__media">
+                            <img width=200 height=200 class=lazyload
+                                 src="images/portfolios/index/2024_ff.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        Stepping Forward on the Last Mile
+                        <p class="text-sml pub">
+                            NeurIPS, 2024
+                            <br/>
+                        </p>
+                        <p class="author">
+                            Chen Feng, Shaojie Zhuo, Xiaopeng Zhang, Ramchalam Kinattinkara Ramakrishnan, Zhaocong Yuan,
+                            <span
+                                    style="color:var(--base-accent-color)"> Andrew Zou Li</span>
+                        </p>
+                        <!--                        <a class="text-meta" href="https://arxiv.org/abs/2310.01775">[paper]</a> &nbsp;-->
                     </div>
                     <!-- Chem-->
                     <div class="card">
                         <div class="card__media">
-                            <img width=300 height=300 class=lazyload
+                            <img width=200 height=200 class=lazyload
                                  src="images/portfolios/index/2022_manipulation_s.jpg" alt="">
                         </div>
                     </div>
                     <div>
                         Chemistry Lab Automation via Constrained Task and Motion Planning
                         <p class="text-sml pub">
-                            Under Review
+                            arXiv, 2022
                             <br/>
                         </p>
                         <p class="author">
@@ -266,10 +314,10 @@
                         <a class=text-meta href="https://www.boreas.utias.utoronto.ca">[website]</a> &nbsp;
                         <a class=text-meta href="https://github.com/utiasASRL/pyboreas">[code]</a>
                     </div>
-                    <span class="text-meta pub"> (* = Equal Contribution)</span>
+                    <span class="text-meta pub"> * = Equal Contribution</span>
                 </div>
                 <div class=intro__meta></div>
-                <h5 style="margin-bottom: 0px">Arts</h5>
+                <h5 class="text-meta">Arts</h5>
                 <p style="font-size: smaller; line-height: 1.5">
                     Besides robotics, I studied a bit of music and digital arts.
                     Some highlights include an Associate's Diploma in Piano Performance from the Royal Conservatory of
@@ -280,9 +328,10 @@
                 </p>
                 <img draggable="false" ondragstart="return false;"
                      src="images/portfolios/photography/TablelandsPan.jpg" alt="">
-                <div class="policy-box" style="margin: 5em 0 10em">
-                    Typeface: Avenir Next <br/>
-                    Tools: HTML/CSS/jQuery <br/>
+                <div class="policy-box" style="margin: 5em 0 10em; font-size: xx-small">
+                    <!--                    Typeface: Avenir Next <br/>-->
+                    <!--                    Tools: HTML/CSS/jQuery <br/>-->
+                    <span>Palette: &nbsp;</span>
                     <div class='box c1'></div>
                     <div class='box c2'></div>
                     <div class='box c3'></div>
@@ -293,24 +342,25 @@
         </div>
     </main>
 </div>
-<footer class=footer role=contentinfo>
-    <div class="policy-box">
-        <span>&#169; Andrew Zou Li 2024  /  All rights reserved. </span>
-    </div>
-    <div class="footer-social">
-        <ul>
-            <li><a href="https://scholar.google.com/citations?user=adt6iVYAAAAJ" target="_blank">
-                <i class="ai ai-google-scholar"></i>
-            </a></li>
-            <li><a href="https://www.linkedin.com/in/andrewzouli/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a></li>
-            <li><a href="https://github.com/AndrewZL" target="_blank">
-                <i class="fab fa-github"></i>
-            </a></li>
-        </ul>
-    </div>
-</footer>
+<!--<footer class=footer role=contentinfo>-->
+<!--    &lt;!&ndash;    <div class="policy-box">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <span>&#169; Andrew Zou Li 2024  /  All rights reserved. </span>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </div>&ndash;&gt;-->
+<!--    <div class="footer-social">-->
+<!--        <ul>-->
+<!--            <li><a style="color: var(&#45;&#45;base-font-color)" href="https://scholar.google.com/citations?user=adt6iVYAAAAJ" target="_blank">-->
+<!--                <i class="ai ai-google-scholar"></i>-->
+<!--            </a></li>-->
+<!--            <li><a style="color: var(&#45;&#45;base-font-color)" href="https://www.linkedin.com/in/andrewzouli/" target="_blank">-->
+<!--                <i class="fab fa-linkedin"></i>-->
+<!--            </a></li>-->
+<!--            <li><a style="color: var(&#45;&#45;base-font-color)" href="https://github.com/AndrewZL" target="_blank">-->
+<!--                <i class="fab fa-github"></i>-->
+<!--            </a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</footer>-->
+<script src="js/enc.js" defer></script>
 <script src="js/extra.js" media="screen"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugins.js"></script>

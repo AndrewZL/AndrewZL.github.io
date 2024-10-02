@@ -35,7 +35,7 @@
     --base-grid-gap: calc(var(--base-spacing) * 2);
     --auto-grid-min-size: 12rem;
     --base-outer-padding: var(--base-spacing);
-    --large-outer-padding: calc(var(--base-spacing) * 16);
+    --large-outer-padding: calc(var(--base-spacing) * 14);
     --xsmall-image-width: 400px;
     --small-image-width: 800px;
     --base-image-width: 1200px;
@@ -49,9 +49,10 @@
     --color-mid-grey: #b0b0b0;
     --color-light-grey: #E9E9E9;
     --color-off-white: #f5f5f5;
+    --color-dark-blue: #3161b5;
     --color-blue: #73a0bd;
     --color-white: #ffffff;
-    --base-accent-color: var(--color-blue);
+    --base-accent-color: var(--color-dark-blue);
     --hover-accent-color: var(--color-off-white);
     --base-background-color: var(--color-off-white);
     --base-block-color: var(--color-white);
@@ -113,7 +114,8 @@
     --base-font-color: var(--color-off-white);
     --base-background-color: var(--color-near-black);
     --tertiary-background-color: var(--color-dark-grey);
-    --base-block-color: var(--color-black)
+    --base-block-color: var(--color-black);
+    --base-accent-color: var(--color-blue);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -318,10 +320,10 @@
 
 .text-meta {
     font-size: var(--small-font-size);
-    font-family: var(--secondary-font-family);
+    font-family: "AvenirNextCyrDemi";
     text-transform: uppercase;
     letter-spacing: .05em;
-    font-weight: 400
+    font-weight: 500
 }
 
 .text-normal {
@@ -636,16 +638,19 @@ summary {
 }
 
 a {
-    color: currentColor;
+    color: var(--base-accent-color);
     background-color: transparent;
-    text-decoration: underline;
-    text-decoration-thickness: var(--base-border-weight);
-    text-underline-offset: var(--min-outline-offset);
+    text-decoration: None;
+    /*text-decoration-thickness: var(--base-border-weight);*/
+    /*text-underline-offset: var(--min-outline-offset);*/
     transition: color var(--base-duration) var(--base-timing)
 }
 
 a:hover {
-    color: var(--base-accent-color)
+    color: var(--base-font-color);
+    text-decoration: underline;
+    text-decoration-thickness: var(--base-border-weight);
+    text-underline-offset: var(--min-outline-offset);
 }
 
 ::-moz-selection {
@@ -728,8 +733,8 @@ h6 {
 
 p {
     text-align: left;
-    font-size: 15px;
-    line-height: 24px;
+    /*font-size: 15px;*/
+    /*line-height: 24px;*/
     padding-bottom: 10px;
 }
 
@@ -868,6 +873,12 @@ blockquote p {
 .card {
     position: relative;
     margin: 0.4em 0 0 0
+}
+
+@media (max-width: 639px) {
+    .card {
+        margin: 0.4em 5em 0 5em
+    }
 }
 
 .card a {
@@ -1055,7 +1066,7 @@ blockquote p {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(18rem, 1.5fr));
     grid-column-gap: var(--base-grid-gap);
-    margin: 0;
+    margin: 1em 0 0 0;
     padding: 0;
     list-style: none
 }
@@ -1557,6 +1568,15 @@ blockquote p {
     opacity: 1;
 }
 
+.header a {
+    color: var(--base-font-color);
+}
+
+.text-link {
+    color: var(--base-font-color);
+}
+
+
 @media (min-width: 800px) {
     .header__nav {
         grid-column: 2/-1;
@@ -1808,9 +1828,10 @@ blockquote p {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-top: var(--base-spacing);
-    margin: 0 0 calc(var(--base-spacing) / 2);
-    border-top: var(--base-border)
+    padding-top: calc(var(--base-spacing)/2);
+    margin: 2em 0 0;
+    border-top: var(--base-border);
+    color: var(--color-mid-grey)
 }
 
 .intro__meta > * {
