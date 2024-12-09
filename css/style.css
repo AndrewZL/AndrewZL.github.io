@@ -1081,6 +1081,22 @@ blockquote p {
     }
 }
 
+.grid-custom2 {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(18rem, 1.5fr));
+    grid-column-gap: var(--base-grid-gap);
+    margin: 1em 0 0 0;
+    padding: 0;
+    list-style: none
+}
+
+
+@media (min-width: 640px) {
+    .grid-custom2 {
+        grid-template-columns: minmax(18rem, 1.5fr) minmax(0.25rem, 12rem);
+    }
+}
+
 .grid-custom > * {
     margin-bottom: calc(var(--base-spacing) * 2)
 }
